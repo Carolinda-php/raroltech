@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <h1> MÓDULO III <img src="golang.png" alt="Descrição da imagem" width="200" height="auto" class= "ima"></h1>
+    
+    <h3 class = 'o'> By Rarol </h3>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style >
+   
+
+   .o{
+
+    text-align: center;
+    background-color:#f0e6c8;
+    color: black;
+   }
+
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+   }
+   
+   li {
+     float: left;
+   }
+   
+   li a, .dropbtn {
+     display: inline-block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   li a:hover, .dropdown:hover .dropbtn {
+     background-color: rgb(0,0,139);
+   }
+   
+   li.dropdown {
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+   }
+   
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+   }
+   
+   
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+
+
+       h1{ 
+            text-align: center;
+            Font-family: Helvetica, Arial, sans-serif;
+            font-size: 70px;
+            color: rgb(0,0,139);
+        }
+
+        h3{ 
+            font-family: 'Courier';
+           
+        }
+
+        h4{
+          text-align: center;
+          font-family: 'Courier';
+
+        }
+
+        .dropdown { 
+            font-family: 'Courier';
+        }
+
+        h1, h3 {
+            margin: 0; /* Remove a margem padrão */
+        }
+        h1 {
+            margin-bottom: 0px; /* Define um espaçamento menor entre o h1 e o h3 */
+        }
+
+
+       
+        h3 {
+            margin-bottom: 20px; /* Define um espaçamento menor entre o h1 e o h3 */
+            
+            
+           
+        }
+
+        body {
+            background-color: #f0e6c8; 
+        }
+
+        p {
+          text-align: center;
+          font-family: 'Courier';
+
+        }
+        .styled-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 8px;
+            background-color: rgb(0,0,139);
+            color: white;
+           
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            font-family: 'Courier';
+
+    
+        }
+
+        .styled-button:hover {
+            background-color: rgb(100,100,100);
+            transform: scale(1.05);
+            
+        }
+
+        .styled-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        }
+        
+        .oi {
+          text-align: justify;
+
+        }
+       
+        .one {
+            border-spacing: 100px; /* Ajuste conforme necessário */
+            border-collapse: collapse; /* Faz com que as bordas se juntem, sem espaço entre elas */
+
+           
+        }
+       
+       
+        .dois {
+            margin: 50px 0; /* Espaçamento opcional para separar o texto do botão */
+           
+        }
+      
+
+        .text-content {
+            border: 1px solid black; /* Aplica a borda ao redor do texto */
+            padding: 10px;
+            margin: 10px 0; /* Espaçamento opcional para separar o texto do botão */
+        }
+
+        .ok {
+          font-family: 'Courier';
+
+        }
+       
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th {
+            text-align: center;
+            padding: 20px;
+        }
+        .icon {
+            font-size: 2em;
+            color: #333;
+        }
+        .ok {
+            margin: 0;
+            padding: 5px;
+        }
+        th div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cj {
+            width: 80%; /* Define a largura do parágrafo */
+            margin: 50px auto 0;
+            text-align: justify; /* Justifica o texto */
+        }
+        
+        .highlight {
+    background-color: rgb(0, 0, 139); /* Cor de fundo azul escuro */
+    color: white; /* Cor do texto para garantir boa visibilidade */
+    padding: 2px 4px; /* Espaçamento interno para deixar o destaque mais evidente */
+    border-radius: 3px; /* Bordas arredondadas, opcional */
+
+    
+    
+}
+
+h4{
+  color:rgb(0,0,139);
+}
+
+p {
+    margin-bottom: 20px; /* Aumenta o espaço abaixo do parágrafo */
+}
+p {
+    margin-bottom: 15px; /* Espaço abaixo do parágrafo */
+}
+
+h3 {
+    margin-top: 25px; /* Espaço acima do <h3> */
+}
+
+.b{
+  color : rgb(0,0,139);
+  width: 80%; /* Define a largura do parágrafo */
+            margin: 50px auto 0;
+            text-align: justify; /* Justifica o texto */
+}
+
+
+
+
+
+h2 {
+    text-align: center;
+}
+
+.styled-table {
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-color: black;
+    font-family: courier;
+}
+
+
+
+
+
+
+   </style>
+
+
+
+</head>
+
+<body>
+
+<ul>
+   
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Menu</a>
+    <div class="dropdown-content">
+    <a href="bemvindo.html"> <p> Bem vindo</i> </p> </a>
+    <a href="m1go.html"> <p> Módulo I </i> </p> </a>
+    <a href="m2go.html"> <p>Módulo II </p> </a>
+    <a href="m3go.html"> <p>Módulo III</p> </a>
+
+
+
+  </li>
+
+
+</ul>
+
+<table>
+
+
+<th>
+
+
+
+
+
+    <h3> <span class = "highlight"> Algoritmos de ordenação...</h3>
+        <h4 >1. Bubble Sort:</h4>
+        
+        <p class="cj"> • Um dos algoritmos de ordenação mais simples, mas menos eficiente para listas grandes. Ele compara pares adjacentes de elementos e os troca, empurrando-os para o final da lista em cada passagem. Em Go, é possível implementar o Bubble Sort manualmente, mas na prática ele é raramente usado devido ao seu custo em tempo .
+         </p>
+         <p class="cj">- Otimizações do Bubble Sort: Uma variação comumente usada é o Bubble Sort Otimizado, que inclui uma verificação para identificar se a lista já está ordenada antes de concluir a iteração completa. Assim, se nenhuma troca foi feita em uma passagem, o algoritmo pode parar. Isso reduz o número de operações em listas quase ordenadas.
+        </p>
+        <p class="cj">- Complexidade Melhorada: Em listas quase ordenadas, essa versão otimizada pode atingir uma complexidade próxima a O(n) em alguns casos, mas ainda mantém O(n²) no pior caso.
+        </p>
+        <p class="cj">- Desvantagens: Apesar das otimizações, Bubble Sort é um dos algoritmos menos eficientes para grandes listas. Ele é, porém, útil para fins educacionais e compreensão inicial de algoritmos de ordenação.
+        </p>
+         <p class= "cj"><img src="ex36.png" alt="Descrição da imagem"></p>
+         <p class="cj">Terminal:</p>
+         <p class= "cj"><img src="ex36.1.png" alt="Descrição da imagem"></p>
+        
+        
+         <h4 >2. Selection Sort: </h4>
+          
+          <p class="cj"> •  Também simples, esse algoritmo busca o menor elemento do array e o coloca na primeira posição, repetindo o processo para cada posição subsequente. Sua complexidade também é , o que torna o Selection Sort menos eficiente para listas grandes.
+           </p>
+           <p class="cj">- Variações e Melhorias: No Selection Sort, uma variação conhecida é o Selection Sort com Dois Pontos, onde o algoritmo localiza tanto o menor quanto o maior elemento em uma única passagem e os coloca nas posições corretas ao mesmo tempo. Isso reduz o número de iterações pela metade, mas não melhora a complexidade O(n²).
+          </p>
+           <p class="cj">- Estabilidade: O Selection Sort não é estável, ou seja, ele não preserva a ordem de elementos iguais. Em contextos que exigem estabilidade, como em algoritmos que ordenam registros baseados em um campo específico, essa pode ser uma desvantagem.
+          </p>
+           <p class= "cj"><img src="ex37.png" alt="Descrição da imagem"></p>
+           <p class="cj">Terminal:</p>
+           <p class= "cj"><img src="ex37.1.png" alt="Descrição da imagem"></p>
+          
+        
+           <h4 >3. Insertion Sort:  </h4>
+          
+           <p class="cj"> • Insere cada elemento da lista em uma posição ordenada, um por um. É eficiente para listas pequenas ou quase ordenadas, mas também tem complexidade  no caso médio e no pior caso.Desempenho em Dados Quase Ordenados: Insertion Sort é eficiente para listas pequenas e quase ordenadas, com uma complexidade próxima a O(n) para esses casos. Isso o torna ideal para ser combinado em algoritmos híbridos, como Tim Sort, que é usado em linguagens modernas como Python. Tim Sort usa Insertion Sort para ordenar pequenos segmentos da lista (sublistas) devido à sua eficiência em listas pequenas.
+        </p>
+            <p class="cj">- Estabilidade e Aplicações Práticas: Insertion Sort é estável, tornando-o útil para ordenar dados onde a ordem original de elementos iguais deve ser preservada. Isso é especialmente valioso em ordenações com múltiplos critérios (ex.: primeiro por nome, depois por idade).
+        </p>
+            <p class= "cj"><img src="ex38.png" alt="Descrição da imagem"></p>
+            <p class="cj">Terminal:</p>
+            <p class= "cj"><img src="ex38.1.png" alt="Descrição da imagem"></p>
+          
+            <h4 >4. Merge Sort:   </h4>
+          
+           <p class="cj"> • Esse é um algoritmo de ordenação mais sofisticado com complexidade , pois utiliza uma abordagem "dividir para conquistar" (divide and conquer). Ele divide a lista em sublistas, ordena cada uma e as combina para formar a lista final ordenada. Em Go, ele pode ser implementado de forma recursiva, aproveitando bem a memória para listas grandes. 
+        </p>
+            <p class="cj">- Dividir para Conquistar: Merge Sort usa uma abordagem divide-and-conquer, que permite dividir a lista em duas partes, ordená-las e, em seguida, mesclar as duas metades ordenadas. Cada divisão tem complexidade O(log n) e a mesclagem O(n), resultando em uma complexidade total de O(n log n).
+        </p>
+        <p class="cj">- Otimização de Merge Sort: Merge Sort Interno e Externo é uma variação onde, em listas muito grandes, o algoritmo divide a lista entre a memória e o disco. Merge Sort externo é particularmente útil para grandes volumes de dados, como em sistemas de banco de dados, onde os dados excedem a memória disponível.
+        </p>
+        <p class="cj">- Desvantagens de Uso de Memória: Embora eficiente, o Merge Sort requer memória extra para armazenar as sublistas durante a mesclagem. Em sistemas com recursos limitados, como dispositivos embarcados, essa exigência de espaço pode ser um problema.
+        </p>
+        <p class= "cj"><img src="ex39.png" alt="Descrição da imagem"></p>
+        <p class= "cj"><img src="ex39.1.png" alt="Descrição da imagem"></p>
+        
+        <p class="cj">Terminal:</p>
+            <p class= "cj"><img src="ex39.2.png" alt="Descrição da imagem"></p>
+        
+
+            <h4 >5. Quick Sort:   </h4>
+          
+            <p class="cj"> • Outro algoritmo eficiente que também tem complexidade  no caso médio. Ele seleciona um pivô e reorganiza a lista para que todos os elementos menores que o pivô fiquem à esquerda, e os maiores, à direita. Depois, ele aplica o mesmo processo recursivamente nas sublistas. Em Go, o Quick Sort é altamente eficiente, mas pode ser implementado de forma híbrida para evitar o pior caso.</p> 
+
+             <p class="cj">- Escolha do Pivô: A eficiência do Quick Sort depende da escolha do pivô. Usar o último elemento como pivô em listas já ordenadas leva ao pior caso O(n²). Algumas variações comuns incluem usar um pivô aleatório ou o elemento central para garantir uma melhor divisão dos dados.
+</p>
+         <p class="cj">- Quick Sort Híbrido: Para evitar o pior caso, Quick Sort híbrido usa outros algoritmos, como Insertion Sort, quando as sublistas se tornam suficientemente pequenas, melhorando o desempenho geral. Esse híbrido é implementado na maioria das bibliotecas de linguagens modernas.
+</p>
+         <p class="cj">- Divisão Direta: Ao contrário do Merge Sort, o Quick Sort é feito "in-place", ou seja, não requer espaço adicional para as sublistas. Isso o torna preferível em contextos onde o espaço de memória é uma preocupação.
+</p>
+         <p class= "cj"><img src="ex40.png" alt="Descrição da imagem"></p>
+         <p class= "cj"><img src="ex40.1.png" alt="Descrição da imagem"></p>
+         
+         <p class="cj">Terminal:</p>
+             <p class= "cj"><img src="ex40.2.png" alt="Descrição da imagem"></p>
+        
+
+
+             <h4 >
+                6. Sort Package: 
+                  </h4>
+          
+             <p class="cj"> • Go oferece o pacote sort, que tem funções embutidas para ordenar slices de tipos numéricos, strings e até mesmo tipos personalizados (usando interfaces). Ele usa uma combinação de algoritmos para obter eficiência máxima em vários cenários. O sort.Ints, por exemplo, ordena slices de inteiros com ótima performance sem precisar de implementações manuais.</p>
+
+              <p class="cj">- Função sort.Search: A função sort.Search do pacote sort em Go implementa uma busca binária eficiente, retornando a posição onde o elemento pode ser encontrado ou inserido, caso não esteja presente. Isso é útil para inserir novos elementos em uma lista ordenada mantendo a ordenação.</p>
+
+          <p class="cj">- Interface sort.Interface: Go permite que usuários personalizem algoritmos de ordenação para tipos complexos. Usando a interface sort.Interface, que define métodos como Len, Less, e Swap, é possível ordenar slices de estruturas personalizadas, o que oferece flexibilidade para ordenação baseada em vários critérios.</p>
+
+          <p class= "cj"><img src="ex41.png" alt="Descrição da imagem"></p>          
+          <p class="cj">Terminal:</p>
+              <p class= "cj"><img src="ex41.1.png" alt="Descrição da imagem"></p>
+         
+
+
+              <h3> <span class = "highlight"> Algoritmos de busca...</h3>
+<h4>1. Busca Linear (Linear Search):</h4>
+<p class="cj">• Simples, percorre cada elemento da lista até encontrar o alvo. Funciona bem em listas pequenas ou desordenadas, mas é ineficiente para listas grandes, com complexidade .
+</p>
+<p class="cj">Descrição:</p>
+<p class="cj">- A busca linear percorre todos os elementos de uma lista um por um até encontrar o elemento desejado ou chegar ao final da lista.
+</p>
+<p class="cj">- Funciona tanto para listas ordenadas quanto para desordenadas.
+</p>
+<p class="cj">Complexidade:
+</p>
+<p class="cj">- A complexidade no pior caso e no caso médio é O(n), onde n é o número de elementos. Isso ocorre porque o algoritmo pode precisar verificar cada elemento da lista.
+</p>
+<p class="cj">- No melhor caso, a complexidade é O(1), caso o elemento alvo seja o primeiro da lista.
+</p>
+<p class="cj">Vantagens:</p>
+<p class="cj">- Simples de implementar e funciona com qualquer tipo de dados.
+</p>
+<p class="cj">- Útil em listas pequenas ou desordenadas.
+</p>
+<p class="cj">Desvantagens:</p>
+<p class="cj">- Ineficiente para listas grandes, pois exige a verificação de cada elemento.
+</p>
+
+<p class="cj">Exemplo de Aplicação: </p>
+<p class="cj">- A busca linear é comum em listas pequenas ou em dados onde não é viável manter uma estrutura ordenada, como listas de convidados de um evento onde a ordem de chegada é irrelevante.
+</p>
+<p class="b">Exemplo em Go: </p>
+
+<p class= "cj"><img src="ex42.png" alt="Descrição da imagem"></p>          
+<p class="cj">Terminal:</p>
+    <p class= "cj"><img src="ex42.1.png" alt="Descrição da imagem"></p>
+
+
+    <h4>2. Busca Binária (Binary Search):</h4>
+    <p class="cj">• Este algoritmo é muito eficiente em listas ordenadas. Ele divide a lista ao meio e decide em qual metade o elemento pode estar, descartando a outra metade. Esse processo é repetido até que o elemento seja encontrado, com complexidade . Em Go, pode-se implementar a busca binária manualmente ou usar o pacote sort para realizar uma busca binária em uma lista ordenada.</p>
+    <p class="cj">Descrição:</p>
+    <p class="cj">- A busca binária é um algoritmo de busca eficiente, mas exige que a lista esteja previamente ordenada.
+</p>
+    <p class="cj">- O algoritmo divide a lista ao meio e verifica se o elemento alvo é maior ou menor que o elemento central. Ele descarta metade da lista a cada etapa e repete o processo na metade restante até encontrar o elemento ou esgotar as possibilidades.
+    </p>
+    <p class="cj">Complexidade:
+    </p>
+    <p class="cj">- A complexidade no caso médio e pior caso é O(log n), onde n é o número de elementos. Isso se deve ao fato de que a cada iteração a lista é dividida ao meio.
+</p>
+    <p class="cj">- No melhor caso, a complexidade é O(1), caso o elemento esteja no meio da lista na primeira verificação.
+
+    </p>
+    <p class="cj">Vantagens:</p>
+    <p class="cj">- Extremamente eficiente para listas grandes e ordenadas, pois reduz o número de comparações.
+    </p>
+    <p class="cj">- Muito mais rápido que a busca linear em listas grandes e ordenadas.
+    </p>
+    <p class="cj">Desvantagens:</p>
+    <p class="cj">- Só funciona em listas ordenadas. Se a lista não estiver ordenada, será necessário ordená-la previamente, o que pode impactar o desempenho.
+
+    </p>
+    
+    <p class="cj">Exemplo de Aplicação: </p>
+    <p class="cj">- A busca binária é comumente usada em sistemas de arquivos, onde os dados são indexados para busca rápida. Outra aplicação é em listas de preços, onde a busca binária encontra um preço específico de maneira rápida em uma lista já ordenada.
+</p>
+    <p class="b">Exemplo em Go: </p>
+    
+    <p class= "cj"><img src="ex43.png" alt="Descrição da imagem"></p>          
+    <p class="cj">Terminal:</p>
+        <p class= "cj"><img src="ex43.1.png" alt="Descrição da imagem"></p>
+    
+    
+        <h4>3. Pacote Sort (Binary Search):</h4>
+        <p class="cj">• O pacote sort também inclui funções como sort.Search que implementam busca binária em slices ordenados de inteiros ou strings.
+        </p>
+        <p class="b">Escolha do Algoritmo
+        </p>
+        <p class="cj">- Pequenas listas: Algoritmos como Insertion Sort e até o Bubble Sort podem ser úteis.
+        </p>
+        <p class="cj">- Listas grandes e desordenadas: Quick Sort e Merge Sort são as melhores opções.
+        </p>
+        <p class="cj">- Busca em lista ordenada: A Busca Binária é a mais eficiente para listas ordenadas.
+        </p>
+
+        <p class="b">
+            Exemplo de Uso de Ordenação em Golang
+            </p>
+
+            <p class="cj">- Usando o pacote sort, você pode ordenar um slice de inteiros com muita facilidade:
+            </p>
+        
+        <p class= "cj"><img src="ex44.png" alt="Descrição da imagem"></p>          
+        <p class="cj">Terminal:</p>
+            <p class= "cj"><img src="ex44.1.png" alt="Descrição da imagem"></p>
+        
+        
+<p class="cj">- Esse código usa o sort.Ints para ordenar o slice numbers.
+</p>
+<p class="b">Exemplo de Busca Binária em Golang
+</p>
+<p class="cj">- Usando a função sort.Search para encontrar um número específico em uma lista ordenada:
+</p>
+  
+<p class= "cj"><img src="ex45.png" alt="Descrição da imagem"></p>          
+<p class="cj">Terminal:</p>
+    <p class= "cj"><img src="ex45.1.png" alt="Descrição da imagem"></p>
+
+<p class="cj">- Esse código utiliza sort.Search, que realiza uma busca binária no slice numbers para encontrar o número target.
+</p>
+
+
+
+
+<h3><span class = "highlight"> Instalação e configuração, história da linguagem...</span></h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AvqV4UNDhqQ?si=0FwTb_BBX8pg1HJZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+</body>
+</html>
+

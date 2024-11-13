@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <h1> MÓDULO II <img src="golang.png" alt="Descrição da imagem" width="200" height="auto" class= "ima"></h1>
+    
+    <h3 class = 'o'> By Rarol </h3>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style >
+   
+
+   .o{
+
+    text-align: center;
+    background-color:#f0e6c8;
+    color: black;
+   }
+
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+   }
+   
+   li {
+     float: left;
+   }
+   
+   li a, .dropbtn {
+     display: inline-block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   li a:hover, .dropdown:hover .dropbtn {
+     background-color: rgb(0,0,139);
+   }
+   
+   li.dropdown {
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+   }
+   
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+   }
+   
+   
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+
+
+       h1{ 
+            text-align: center;
+            Font-family: Helvetica, Arial, sans-serif;
+            font-size: 70px;
+            color: rgb(0,0,139);
+        }
+
+        h3{ 
+            font-family: 'Courier';
+           
+        }
+
+        h4{
+          text-align: center;
+          font-family: 'Courier';
+
+        }
+
+        .dropdown { 
+            font-family: 'Courier';
+        }
+
+        h1, h3 {
+            margin: 0; /* Remove a margem padrão */
+        }
+        h1 {
+            margin-bottom: 0px; /* Define um espaçamento menor entre o h1 e o h3 */
+        }
+
+
+       
+        h3 {
+            margin-bottom: 20px; /* Define um espaçamento menor entre o h1 e o h3 */
+            
+            
+           
+        }
+
+        body {
+            background-color: #f0e6c8; 
+        }
+
+        p {
+          text-align: center;
+          font-family: 'Courier';
+
+        }
+        .styled-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 8px;
+            background-color: rgb(0,0,139);
+            color: white;
+           
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            font-family: 'Courier';
+
+    
+        }
+
+        .styled-button:hover {
+            background-color: rgb(100,100,100);
+            transform: scale(1.05);
+            
+        }
+
+        .styled-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        }
+        
+        .oi {
+          text-align: justify;
+
+        }
+       
+        .one {
+            border-spacing: 100px; /* Ajuste conforme necessário */
+            border-collapse: collapse; /* Faz com que as bordas se juntem, sem espaço entre elas */
+
+           
+        }
+       
+       
+        .dois {
+            margin: 50px 0; /* Espaçamento opcional para separar o texto do botão */
+           
+        }
+      
+
+        .text-content {
+            border: 1px solid black; /* Aplica a borda ao redor do texto */
+            padding: 10px;
+            margin: 10px 0; /* Espaçamento opcional para separar o texto do botão */
+        }
+
+        .ok {
+          font-family: 'Courier';
+
+        }
+       
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th {
+            text-align: center;
+            padding: 20px;
+        }
+        .icon {
+            font-size: 2em;
+            color: #333;
+        }
+        .ok {
+            margin: 0;
+            padding: 5px;
+        }
+        th div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cj {
+            width: 80%; /* Define a largura do parágrafo */
+            margin: 50px auto 0;
+            text-align: justify; /* Justifica o texto */
+        }
+        
+        .highlight {
+    background-color: rgb(0, 0, 139); /* Cor de fundo azul escuro */
+    color: white; /* Cor do texto para garantir boa visibilidade */
+    padding: 2px 4px; /* Espaçamento interno para deixar o destaque mais evidente */
+    border-radius: 3px; /* Bordas arredondadas, opcional */
+
+    
+    
+}
+
+h4{
+  color:rgb(0,0,139);
+}
+
+p {
+    margin-bottom: 20px; /* Aumenta o espaço abaixo do parágrafo */
+}
+p {
+    margin-bottom: 15px; /* Espaço abaixo do parágrafo */
+}
+
+h3 {
+    margin-top: 25px; /* Espaço acima do <h3> */
+}
+
+.b{
+  color : rgb(0,0,139);
+  width: 80%; /* Define a largura do parágrafo */
+            margin: 50px auto 0;
+            text-align: justify; /* Justifica o texto */
+}
+
+
+
+
+
+h2 {
+    text-align: center;
+}
+
+.styled-table {
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-color: black;
+    font-family: courier;
+}
+
+
+
+
+
+
+   </style>
+
+
+
+</head>
+
+<body>
+
+<ul>
+   
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Menu</a>
+    <div class="dropdown-content">
+    <a href="bemvindo.html"> <p> Bem vindo</i> </p> </a>
+    <a href="m1go.html"> <p> Módulo I </i> </p> </a>
+    <a href="m2go.html"> <p>Módulo II </p> </a>
+    <a href="m3go.html"> <p>Módulo III</p> </a>
+
+
+
+  </li>
+
+
+</ul>
+
+<table>
+
+
+<th>
+
+
+
+
+<h3> <span class = "highlight"> Programas Básicos...</h3>
+<h4 >Fatorial</h4>
+<p class="cj">• O fatorial de um número é o produto de todos os inteiros positivos menores ou iguais a ele. Em Go, você pode calcular o fatorial de maneira recursiva ou iterativa. 
+  Esse programa calcula o fatorial de um número de maneira recursiva. A função fatorial é chamada repetidamente, multiplicando o número atual pelo fatorial de seu antecessor até chegar a 1.Aqui está um exemplo recursivo:
+  </p>
+  <p class= "cj"><img src="ex24.png" alt="Descrição da imagem"></p>
+
+  <p class="cj">Terminal:</p>
+  <p class= "cj"><img src="ex24.png" alt="Descrição da imagem"></p>
+
+  <h4 >Verificar se um Número é Primo</h4>
+  <p class="cj">• Um número primo é um número maior que 1 que só é divisível por 1 e por ele mesmo A função isPrimo checa se um número é primo iterando do número 2 até a raiz quadrada do número, verificando se ele tem divisores. Se não houver divisores além de 1 e ele mesmo, o número é primo. Aqui está uma função que verifica isso:
+</p>
+    <p class= "cj"><img src="ex25.png" alt="Descrição da imagem"></p>
+  
+    <p class="cj">Terminal:</p>
+    <p class= "cj"><img src="ex25.1.png" alt="Descrição da imagem"></p>
+  
+  
+    <h3> <span class = "highlight"> Vetores e Matrizes...</h3>
+<h4>Vetores (Slices em Go)
+</h4>
+<p class="cj">• Em Go, você pode usar slices para criar vetores de tamanho dinâmico. Em Go, slices são vetores de tamanho variável. Neste exemplo, usamos o append para adicionar elementos a um slice e o range para iterar sobre seus elementos.
+  Veja um exemplo de como criar e manipular um vetor:
+  </p>
+  <p class= "cj"><img src="ex26.png" alt="Descrição da imagem"></p>
+  
+    <p class="cj">Terminal:</p>
+    <p class= "cj"><img src="ex26.1.png" alt="Descrição da imagem"></p>
+
+    <h4>Matrizes
+    </h4>
+    <p class="cj">• Em Go, uma matriz é uma estrutura de dados bidimensional com tamanho fixo Matrizes em Go têm tamanho fixo e podem ser multidimensionais. Neste exemplo, temos uma matriz 2x3 e usamos loops aninhados para acessar e exibir cada elemento. Aqui está o exemplo:
+
+      </p>
+      <p class= "cj"><img src="ex27.png" alt="Descrição da imagem"></p>
+      
+        <p class="cj">Terminal:</p>
+        <p class= "cj"><img src="ex27.1.png" alt="Descrição da imagem"></p>
+
+  
+<h3> <span class = "highlight">Manipulação de Arquivos...</h3>
+<p class="cj">• Em Go, você pode usar o pacote os para manipular arquivos, como criar, ler e apagar arquivos.
+</p>
+<p class="b">
+  Criar e Escrever em um Arquivo:</p>
+<p class="cj">- Com o pacote os, o programa cria um arquivo e escreve uma string nele.
+
+  Aqui está um exemplo de como criar um arquivo e escrever algo nele:
+  </p>
+  <p class= "cj"><img src="ex28.png" alt="Descrição da imagem"></p>
+  <p class= "cj"><img src="ex28.1.png" alt="Descrição da imagem"></p>
+
+
+<p class="b">Ler de um Arquivo:</p>
+<p class="cj">- A função ReadFile do pacote ioutil permite ler o conteúdo do arquivo e imprimi-lo.
+
+  Para ler o conteúdo de um arquivo:
+  </p>
+  <p class= "cj"><img src="ex29.png" alt="Descrição da imagem"></p>
+      
+        <p class="cj">Terminal:</p>
+        <p class= "cj"><img src="ex29.1.png" alt="Descrição da imagem"></p>
+
+<p class="b">Apagar um Arquivo
+</p>
+<p class="cj">Para apagar um arquivo, você pode usar a função os.Remove.</p>
+<p class= "cj"><img src="ex30.png" alt="Descrição da imagem"></p>
+      
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex30.1.png" alt="Descrição da imagem"></p>
+
+
+<h3> <span class = "highlight">Exemplos mais complexos...</h3>
+<p class="b">1. Programa para Cálculo do Fatorial com Memoization</p>
+<p class="cj">• O cálculo do fatorial pode ser otimizado usando memoization, que armazena resultados de chamadas anteriores para evitar cálculos repetidos. Isso é útil, especialmente para funções recursivas que podem fazer muitas chamadas aninhadas.
+</p>
+<p class= "cj"><img src="ex31.1.png" alt="Descrição da imagem"></p>
+      
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex31.png" alt="Descrição da imagem"></p>
+
+<p class="b">2. Uso de Vetores para Gerenciar Dados Complexos - Lista de Estudantes e Média de Notas
+</p>
+<p class="cj">
+  • Aqui, slices são usados para armazenar informações de estudantes e suas notas. O programa calcula a média de notas de cada estudante, mostrando como trabalhar com dados complexos em Go.
+  
+  Este exemplo mostra como usar slices para armazenar dados complexos, como uma lista de estudantes e calcular a média de notas.
+  </p>
+  <p class= "cj"><img src="ex32.png" alt="Descrição da imagem"></p>
+      
+  <p class= "cj"><img src="ex32b.png" alt="Descrição da imagem"></p>
+  <p class="cj">Terminal:</p>
+  <p class= "cj"><img src="ex32.1.png" alt="Descrição da imagem"></p>
+  
+
+<p class="b">
+  3. Manipulação de Arquivos com Log Rotativo
+  </p>
+<p class="cj">• Para sistemas que gravam muitos logs, o gerenciamento de arquivos pode ser feito por meio de logs rotativos, onde um novo arquivo é criado quando o anterior atinge um certo limite. Logs rotativos são usados para evitar que arquivos de log fiquem grandes demais. Quando o arquivo atual atinge o tamanho máximo, é criado um novo arquivo de log.</p>
+<p class= "cj"><img src="ex33.png" alt="Descrição da imagem"></p>
+      
+<p class= "cj"><img src="ex33b.png" alt="Descrição da imagem"></p>
+
+<p class="b">4. Concorrência em Go - Processamento Paralelo de Dados</p>
+<p class="cj">• Aqui vamos usar goroutines e canais para processar dados em paralelo. Este exemplo processa uma lista de números e calcula seus quadrados em paralelo.Neste exemplo, goroutines e canais são usados para calcular o quadrado de vários números em paralelo, aumentando a eficiência para grandes quantidades de dados.
+</p>      
+<p class= "cj"><img src="ex34.png" alt="Descrição da imagem"></p>
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex34.1.png" alt="Descrição da imagem"></p>
+
+
+<p class="b">5. Funções Assíncronas e Channels - Pipeline de Processamento
+</p>
+<p class="cj">• Aqui, implementamos um pipeline onde cada etapa do processamento é feita em uma goroutine separada e os dados fluem através de canais. Este exemplo aplica operações de transformação a uma lista de números (como dobrar e calcular a raiz quadrada).Este exemplo mostra um pipeline de processamento com várias etapas, em que cada etapa é feita em uma goroutine diferente. Os dados fluem através dos canais de uma etapa para a próxima, permitindo processar dados de maneira assíncrona e eficiente.
+</p>
+<p class= "cj"><img src="ex35.png" alt="Descrição da imagem"></p>
+<p class= "cj"><img src="ex35b.png" alt="Descrição da imagem"></p>
+
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex35.1.png" alt="Descrição da imagem"></p>
+
+
+
+
+
+
+
+<h3><span class = "highlight"> Exemplos e explicações...</span></h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ma2sejKB_lA?si=DEnYXPjBmUQWVSDT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </th>
+
+
+
+</body>
+</html>
+

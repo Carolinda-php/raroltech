@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <h1> MÓDULO II <img src="python.jpg" alt="Descrição da imagem" width="auto" height="60" class= "ima"></h1>
+    
+    <h3 class = 'o'> By Rarol </h3>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style >
+   
+
+   .o{
+
+    text-align: center;
+    background-color:#f0e6c8;
+    color: black;
+   }
+
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+   }
+   
+   li {
+     float: left;
+   }
+   
+   li a, .dropbtn {
+     display: inline-block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   li a:hover, .dropdown:hover .dropbtn {
+     background-color: rgb(0,0,139);
+   }
+   
+   li.dropdown {
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+   }
+   
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+   }
+   
+   
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+
+
+       h1{ 
+            text-align: center;
+            Font-family: Helvetica, Arial, sans-serif;
+            font-size: 70px;
+            color: rgb(0,0,139);
+        }
+
+        h3{ 
+            font-family: 'Courier';
+           
+        }
+
+        h4{
+          text-align: center;
+          font-family: 'Courier';
+
+        }
+
+        .dropdown { 
+            font-family: 'Courier';
+        }
+
+        h1, h3 {
+            margin: 0; /* Remove a margem padrão */
+        }
+        h1 {
+            margin-bottom: 0px; /* Define um espaçamento menor entre o h1 e o h3 */
+        }
+
+
+       
+        h3 {
+            margin-bottom: 20px; /* Define um espaçamento menor entre o h1 e o h3 */
+            
+            
+           
+        }
+
+        body {
+            background-color: #f0e6c8; 
+        }
+
+        p {
+          text-align: center;
+          font-family: 'Courier';
+
+        }
+        .styled-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 8px;
+            background-color: rgb(0,0,139);
+            color: white;
+           
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            font-family: 'Courier';
+
+    
+        }
+
+        .styled-button:hover {
+            background-color: rgb(100,100,100);
+            transform: scale(1.05);
+            
+        }
+
+        .styled-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        }
+        
+        .oi {
+          text-align: justify;
+
+        }
+       
+        .one {
+            border-spacing: 100px; /* Ajuste conforme necessário */
+            border-collapse: collapse; /* Faz com que as bordas se juntem, sem espaço entre elas */
+
+           
+        }
+       
+       
+        .dois {
+            margin: 50px 0; /* Espaçamento opcional para separar o texto do botão */
+           
+        }
+      
+
+        .text-content {
+            border: 1px solid black; /* Aplica a borda ao redor do texto */
+            padding: 10px;
+            margin: 10px 0; /* Espaçamento opcional para separar o texto do botão */
+        }
+
+        .ok {
+          font-family: 'Courier';
+
+        }
+       
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th {
+            text-align: center;
+            padding: 20px;
+        }
+        .icon {
+            font-size: 2em;
+            color: #333;
+        }
+        .ok {
+            margin: 0;
+            padding: 5px;
+        }
+        th div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cj {
+            width: 80%; /* Define a largura do parágrafo */
+            margin: 50px auto 0;
+            text-align: justify; /* Justifica o texto */
+        }
+        
+        .highlight {
+    background-color: rgb(0, 0, 139); /* Cor de fundo azul escuro */
+    color: white; /* Cor do texto para garantir boa visibilidade */
+    padding: 2px 4px; /* Espaçamento interno para deixar o destaque mais evidente */
+    border-radius: 3px; /* Bordas arredondadas, opcional */
+
+    
+    
+}
+
+h4{
+  color:rgb(0,0,139);
+}
+
+p {
+    margin-bottom: 20px; /* Aumenta o espaço abaixo do parágrafo */
+}
+p {
+    margin-bottom: 15px; /* Espaço abaixo do parágrafo */
+}
+
+h3 {
+    margin-top: 25px; /* Espaço acima do <h3> */
+}
+
+.b{
+  color : rgb(0,0,139);
+  width: 80%; /* Define a largura do parágrafo */
+            margin: 50px auto 0;
+            text-align: justify; /* Justifica o texto */
+}
+
+
+
+
+
+h2 {
+    text-align: center;
+}
+
+.styled-table {
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-color: black;
+    font-family: courier;
+}
+
+
+
+
+
+
+   </style>
+
+
+
+</head>
+
+<body>
+
+<ul>
+   
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Menu</a>
+    <div class="dropdown-content">
+    <a href="bemvindo.html"> <p> Bem vindo</i> </p> </a>
+
+    <a href="m1.html"> <p> Módulo I </i> </p> </a>
+    <a href="m2.html"> <p>Módulo II </p> </a>
+    <a href="m3.html"> <p>Módulo III</p> </a>
+
+
+
+  </li>
+
+
+</ul>
+
+<table>
+
+
+<th>
+
+
+
+
+<h3> <span class = "highlight"> Programas básicos...</h3>
+<h4 > Fatorial, Primo, e etc...</h4>
+<p class= "b"> • Fatorial:</p> 
+<p class= "cj"> O fatorial é uma operação matemática muito utilizada em diversas áreas, como matemática, estatística, ciência da computação e engenharia. Ele é representado pelo símbolo “!”, e é utilizado para calcular a multiplicação de todos os números inteiros positivos menores ou iguais a um determinado número. </p>
+
+<p class= "cj"> Em Python, existem várias maneiras de calcular o fatorial de um número. O cálculo do fatorial pode ser feito de forma iterativa, utilizando um loop, ou de forma recursiva, onde a função chama a si mesma até atingir um caso base.</p>
+
+<p class ="b"> Exempo de fatorial iterativo:</p>
+<p class= "cj"><img src="fati.png" alt="Descrição da imagem"></p>
+
+<p class= "b">Exemplo de fatorial recursivo: </p>
+<p class= "cj"><img src="fatr.png" alt="Descrição da imagem"></p>
+
+<p class= "b">Biblioteca math: </p>
+<p class = "cj"> Além dos métodos mencionados anteriormente, existem outras formas de calcular o fatorial usando Python. Algumas bibliotecas, como o math, já possuem funções prontas para calcular o fatorial de um número.</p>
+<p class= "cj"><img src="fatmath.png" alt="Descrição da imagem"></p>
+
+
+<p class= "b"> • Primo:</p> 
+<p class= "cj"> Um número primo é um número natural maior que 1 que só pode ser dividido por 1 e por ele mesmo, sem deixar resto. Em outras palavras, um número primo tem exatamente dois divisores: 1 e ele próprio.
+</p> 
+<p class= "cj"> Por exemplo, 2, 3, 5, 7 e 11 são números primos. Já o número 4 não é primo, porque além de ser divisível por 1 e 4, ele também é divisível por 2.
+</p>
+<p class= "cj"> Identificar se um número é primo ou não é uma tarefa comum na programação Python. Felizmente, existem várias maneiras de realizar essa verificação. Uma abordagem comum é o uso de um loop que verifica se o número é divisível por qualquer outro número menor que ele. Se nenhum divisor for encontrado, o número é considerado primo.</p>
+
+<p class= "b"> Exemplo:</p>
+<p class= "cj"><img src="primo.png" alt="Descrição da imagem"></p>
+<p class= "cj"><img src="primo1.png" alt="Descrição da imagem"></p>
+
+
+<p class = "b"> • Jogo da adivinhação:</p>
+<p class= "cj">O jogo da adivinhação é um programa simples em Python que permita ao usuário adivinhar um número secreto. O programa deve fornecer dicas ao usuário para ajudá-lo a acertar o número. </p>
+<p class= "cj"><img src="j.png" alt="Descrição da imagem"></p>
+<p class= "cj"><img src="jg1.png" alt="Descrição da imagem"></p>
+
+
+<p class = "b">• Gerador de senhas: </p>
+<p class= "cj"> É um programa que gere senhas aleatórias com base em requisitos específicos, como comprimento mínimo e inclusão de letras maiúsculas, letras minúsculas, números e caracteres especiais.
+</p>
+<p class= "cj"><img src="senha.png" alt="Descrição da imagem"></p>
+
+
+
+<h3 ><span class = "highlight"> Vetores...</h3>
+<p class = "cj"> Um vetor em Python é uma estrutura de dados que armazena uma coleção ordenada de elementos. Cada elemento é identificado por um índice, que começa em 0 para o primeiro elemento, 1 para o segundo e assim por diante. Os vetores são utilizados para armazenar e manipular conjuntos de valores relacionados.</p>
+<p class = "cj"> Para criar um vetor em Python, podemos usar a estrutura de dados nativa chamada de “list”. Por exemplo: </p>
+<p class = "b">     vetor = [1, 2, 3, 4, 5] </p>
+<p class = "cj"> Neste exemplo, criamos um vetor chamado “vetor” com os valores de 1 a 5. Podemos acessar cada elemento do vetor utilizando seu índice. Por exemplo, para acessar o primeiro elemento, utilizamos “vetor[0]”.</p>
+<p class = "cj">Além disso, também é possível criar vetores vazios e adicionar elementos posteriormente. Por exemplo:</p>
+<p class = "b"> vetor = [] </p>
+  <p class= "b">                 vetor.append(1)
+  </p> 
+  <p class= "b">                vetor.append(2)
+  </p> 
+  <p class= "b">                 vetor.append(3) 
+  </p> 
+
+<p class = "cj"> Neste caso, criamos um vetor vazio e adicionamos os elementos 1, 2 e 3 utilizando o método “append”.</p>
+<p class = "b"> • Como manipular vetores utilizando a linguagem de programação Python</p>
+<p class = "cj"> Vamos explorar algumas das principais operações e funcionalidades para manipular vetores em Python.</p>
+<p class = "b"> 1. Acesso aos elementos do vetor: </p>
+<p class = "cj"> • Podemos acessar um elemento específico do vetor utilizando seu índice. Por exemplo, para acessar o primeiro elemento do vetor “vetor”, utilizamos “vetor[0]”.
+<p class = "cj"> • Também é possível acessar uma faixa de elementos utilizando a notação de fatiamento. 
+Por exemplo, para acessar os elementos do segundo ao quarto, utilizamos “vetor[1:4]”.</p>
+<p class = "b"> 2. Adição de elementos: </p>
+<p class = "cj"> • Podemos adicionar elementos a um vetor utilizando o método “append”. Por exemplo, para adicionar o valor 6 ao vetor “vetor”, utilizamos “vetor.append(6)”.</p>
+<p class = "cj"> • Também é possível adicionar múltiplos elementos de uma vez utilizando o método “extend”. Por exemplo, para adicionar os valores 7, 8 e 9 ao vetor “vetor”, utilizamos “vetor.extend([7, 8, 9])”.</p>
+<p class = "b">3. Remoção de elementos:</p>
+<p class = "cj"> • Podemos remover um elemento específico do vetor utilizando o método “remove”. Por exemplo, para remover o valor 3 do vetor “vetor”, utilizamos “vetor.remove(3)”.
+</p>
+<p class = "cj"> • Também é possível remover um elemento pelo seu índice utilizando a palavra-chave “del”. Por exemplo, para remover o segundo elemento do vetor “vetor”, utilizamos “del vetor[1]”.
+</p>
+<p class = "b"> 4. Operações matemáticas:</p>
+<p class = "cj"> • Podemos realizar operações matemáticas em todos os elementos de um vetor utilizando laços de repetição. Por exemplo, para multiplicar todos os elementos do vetor “vetor” por 2, podemos utilizar o seguinte código:
+</p>
+<p class = "b"> for i in range(len(vetor)):
+</p>
+  <p class = "b">   vetor[i] = vetor[i] * 2 </p>
+
+  <figure>
+<p class= "cj"><img src="v1.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Soma de elementos de um Vetor</figcaption>
+</figure>
+
+<figure>
+<p class= "cj"><img src="v2.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Multiplicação de Vetor por um número</figcaption>
+</figure>
+
+<figure>
+<p class= "cj"><img src="v3.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Cálculo da média dos elementos de um Vetor</figcaption>
+</figure>
+  
+
+
+
+
+
+
+<h3 ><span class = "highlight"> Matrizes... </h3>
+
+<p class = "cj">Python é uma linguagem de programação poderosa e versátil que oferece várias funcionalidades para trabalhar com matrizes. Para começar, vamos entender o que são matrizes. Em programação, uma matriz é uma estrutura de dados bidimensional composta por linhas e colunas. Em Python, podemos criar matrizes utilizando listas aninhadas, onde cada lista interna representa uma linha da matriz. Veja um exemplo: </p>
+<p class = "b"> matriz = [[1, 2, 3],
+</p>
+<p class = "b">           [4, 5, 6],
+</p>
+<p class = "b">           [7, 8, 9]]
+</p>
+<p class = "cj"> Neste exemplo, temos uma matriz 3×3, com 3 linhas e 3 colunas. Cada elemento da matriz pode ser acessado utilizando índices, onde o primeiro valor representa a linha e o segundo valor representa a coluna. Por exemplo, para acessar o valor 5, utilizamos matriz[1][1].
+</p>
+<p class = "cj">Agora que entendemos como criar uma matriz básica em Python, vamos explorar algumas funcionalidades para manipulá-las. Uma das operações mais comuns é a transposição, onde trocamos as linhas pelas colunas. Em Python, podemos realizar a transposição de uma matriz utilizando a função zip. Veja o exemplo:
+</p>
+<p class = "b"> matriz = [[1, 2, 3], </p>
+<p class = "b"> [4, 5, 6], </p>
+<p class = "b"> [7, 8, 9]] </p>
+
+<p class = "b"> matriz_transposta = list(zip(*matriz)) </p>
+
+<p class = "cj"> Neste exemplo, a função zip é utilizada em conjunto com o operador * para desempacotar as linhas da matriz e transpor os elementos. Agora, a matriz transposta será:
+</p>
+
+<p class = "b"> [(1, 4, 7), </p>
+<p class = "b">  (2, 5, 8),
+</p>
+<p class = "b">  (3, 6, 9)]
+</p>
+
+<p class = "cj">Outra operação comum é a adição de matrizes. Para somar duas matrizes em Python, basta percorrer os elementos correspondentes e realizar a soma. Veja o exemplo: </p>
+
+<p class= "b"> matriz1 = [[1, 2, 3],
+</p>
+<p class= "b">            [4, 5, 6],
+</p>
+<p class= "b">            [7, 8, 9]]
+</p>
+<p class= "b"> matriz2 = [[9, 8, 7],
+</p>
+<p class= "b">           [6, 5, 4],
+</p>
+<p class= "b">            [3, 2, 1]]
+</p>
+<p class= "b">soma = [[matriz1[i][j] + matriz2[i][j] for j in range(len(matriz1[0]))] for i in range(len(matriz1))]
+</p>
+
+<p class="cj"> Neste exemplo, a matriz resultante da soma será:</p>
+<p class= "b"> [[10, 10, 10],
+</p>
+<p class= "b">  [10, 10, 10],
+</p>
+<p class= "b">  [10, 10, 10]]
+</p>
+
+<figure>
+<p class= "cj"><img src="m1.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Transposição de matriz sem a utilização da função zip</figcaption>
+</figure>
+
+<figure>
+<p class= "cj"><img src="m2.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Multiplicação de matrizes</figcaption>
+</figure>
+
+
+<h3> <span class = "highlight"> Arquivos...</h3>
+<h4 > Criar, Ler, Excluir e Editar</h4>
+
+<p class= "cj">Arquivos em Python são uma forma simples e amplamente utilizada de armazenar e manipular dados em formato de texto. Esses arquivos são ideais para salvar informações estruturadas ou não estruturadas, como logs, configurações e dados processados, em um formato legível por humanos.</p>
+
+<p class= "cj">Há diversos modos de uso, como podemos ver abaixo:</p>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Parâmetro</th>
+            <th>Descrição</th>
+            <th>Comportamento</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>"r""</td>
+            <td>Leitura</td>
+            <td>Abre o arquivo para leitura. O arquivo deve existir.</td>
+        </tr>
+        <tr>
+            <td>"w""</td>
+            <td>Escrita</td>
+            <td>Abre o arquivo para escrita. Cria um novo arquivo ou trunca o arquivo existente.</td>
+        </tr>
+        <tr>
+            <td>"a"</td>
+            <td>Anexar</td>
+            <td>Abre o arquivo para escrita no final do arquivo. Cria um novo arquivo se ele não existir.</td>
+        </tr>
+        <tr>
+            <td>"x""</td>
+            <td>Criação exclusiva</td>
+            <td>Cria um novo arquivo, mas falha se o arquivo já existir.</td>
+        </tr>
+        <tr>
+            <td>"b"</td>
+            <td>Modo binário</td>
+            <td>Abre o arquivo em modo binário. Pode ser combinado com outros modos (r, w, a, x).</td>
+        </tr>
+        <tr>
+            <td>"t"</td>
+            <td>	Modo texto</td>
+            <td>Abre o arquivo em modo texto. É o modo padrão e pode ser combinado com outros modos (r, w, etc.).</td>
+        </tr>
+        <tr>
+            <td>"+"</td>
+            <td>Leitura e escrita</td>
+            <td>Abre o arquivo para leitura e escrita. Pode ser combinado com r, w, ou a.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p class= "cj">Estes modos são passados como segundo parâmetro do método open. Ou seja, se quisermos abrir um arquivo em modo de escrita, utilizamos a seguinte sintaxe:
+</p>
+
+<p class = "b">arquivo = open("contatos.txt", "a")
+</p>
+
+<p class ="cj"> Passamos o nome do arquivo e sua extensão, além do modo que queremos utilizar o arquivo. Este modo pode ser alterado conforme as opções apresentadas anteriormente.
+Sendo assim, ao executar o código acima, o arquivo contatos.txt será aberto em modo escrita (caso ele não exista, um novo arquivo será criado):
+
+</p>
+
+<h4> Escrevendo dados em arquivos </h4>
+<p class = "cj"> Agora que já sabemos como criar arquivos e seus diferentes modos de uso, podemos realizar as primeiras manipulações. Neste tópico, veremos como escrever dados e salvar em arquivo utilizando o Python.
+Para isso, a linguagem fornece dois métodos. O primeiro é o método write() que recebe uma string como parâmetro e a insere no arquivo:
+</p>
+
+<p class="b"> arquivo = open("contatos.txt", "a")</p>
+<p class= "b">
+arquivo.write("Olá, mundo!")
+</p>
+
+<p class = "cj"> Com a execução do código acima, a string Olá, mundo! será inserida no arquivo texto.txt:</p>
+
+<h4> Lendo dados de arquivos </h4>
+<p class = "cj"> Além de escrever dados em arquivos, precisamos, também, saber ler os dados que os arquivos possuem. Para isso, existem dois métodos, o primeiro é o readline() que irá ler uma quantidade N de caracteres da primeira linha passadas como parâmetro:
+</p>
+
+<p class = "b"> arquivo = open("texto.txt", "r")</p>
+
+<p class = "b"> print(arquivo.readline(3)) </p>
+
+<p class = "cj"> A execução acima retornará os três primeiros caracteres da primeira linha do arquivo:
+</p>
+
+<p class = "cj"> O segundo método disponível é o readlines(). Este método irá retornar todas as linhas do arquivo:
+</p>
+
+<p class = "b"> arquivo = open("texto.txt", "r")
+ </p>
+
+ <p class = "b"> print(arquivo.readlines()) </p>
+
+
+ <h4> Excluindo arquivos </h4>
+ <p class = "cj"> Se faz necessário também que saibamos excluir o arquivo que criamos, e em Python, você pode usar a função "remove()" do módulo "os". Como exemplificado abaixo: </p>
+
+  <p class = "b"> import os </p>
+   
+  <p class = "cj">  Importa o módulo os, que permite interagir com o sistema operacional.</p>
+
+  <p class="b">if os.path.exists(nome_do_arquivo):   </p>
+
+  <p class= "cj">  Verifica se o arquivo existe</p>
+
+
+  <p class= "b"> os.remove(nome_do_arquivo)   </p>
+
+  <p class= "cj"> Exclui o arquivo</p>
+
+
+ <h4>Editando dados de arquivos </h4>
+ 
+<p class= "cj"> Editar arquivos em Python é uma tarefa comum em programação que permite modificar dados armazenados em arquivos de texto de maneira eficiente. Esse processo pode ser útil em diversas situações, como atualizar registros, corrigir erros, ou ajustar informações sem a necessidade de recriar o arquivo do zero. </p>
+
+<p class= "b"> 1. Substituir Todo o Conteúdo </p>
+<p class= "cj">Você pode abrir o arquivo no modo de escrita (w), que apaga todo o conteúdo do arquivo, e escrever o novo conteúdo. </p>
+<p class= "cj"><img src="editar1.png" alt="Descrição da imagem"></p>
+
+
+<p class= "b"> 2. Adicionar Conteúdo ao Final </p>
+<p class= "cj"> Para adicionar (anexar) conteúdo ao final do arquivo, use o modo de anexar (a).</p>
+<p class= "cj"><img src="editar2.png" alt="Descrição da imagem"></p>
+
+
+<p class= "b">3. Modificar Linhas Específicas </p>
+<p class= "cj"> Para modificar partes específicas do arquivo, você pode ler todo o conteúdo do arquivo, fazer as modificações desejadas e depois reescrever o conteúdo atualizado no arquivo.</p>
+<p class= "cj"><img src="editar3.png" alt="Descrição da imagem"></p>
+
+<p class= "b">4. Substituir Texto Específico  </p>
+<p class= "cj">Se você deseja substituir um texto específico em todo o arquivo, você pode usar a função replace(). </p>
+<p class= "cj"><img src="editar4.png" alt="Descrição da imagem"></p>
+
+<p class= "b">5. Inserir Conteúdo em uma Posição Específica </p>
+<p class= "cj"> Para inserir conteúdo em uma posição específica, você pode ler o arquivo, modificar o conteúdo conforme necessário e reescrever o arquivo.</p>
+<p class= "cj"><img src="editar5.png" alt="Descrição da imagem"></p>
+
+
+<h3><span class = "highlight"> Exemplos e Explicações...</span></h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sex_eqW53L0?si=c5fKHzwSlfToPkw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+</body>
+</html>
+
