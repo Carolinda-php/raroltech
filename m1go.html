@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <h1> MÓDULO I <img src="golang.png" alt="Descrição da imagem" width="200" height="auto" class= "ima"></h1>
+    
+    <h3 class = 'o'> By Rarol </h3>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style >
+   
+
+   .o{
+
+    text-align: center;
+    background-color:#f0e6c8;
+    color: black;
+   }
+
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+   }
+   
+   li {
+     float: left;
+   }
+   
+   li a, .dropbtn {
+     display: inline-block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   li a:hover, .dropdown:hover .dropbtn {
+     background-color: rgb(0,0,139);
+   }
+   
+   li.dropdown {
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+   }
+   
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+   }
+   
+   
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+
+
+       h1{ 
+            text-align: center;
+            Font-family: Helvetica, Arial, sans-serif;
+            font-size: 70px;
+            color: rgb(0,0,139);
+        }
+
+        h3{ 
+            font-family: 'Courier';
+           
+        }
+
+        h4{
+          text-align: center;
+          font-family: 'Courier';
+
+        }
+
+        .dropdown { 
+            font-family: 'Courier';
+        }
+
+        h1, h3 {
+            margin: 0; /* Remove a margem padrão */
+        }
+        h1 {
+            margin-bottom: 0px; /* Define um espaçamento menor entre o h1 e o h3 */
+        }
+
+
+       
+        h3 {
+            margin-bottom: 20px; /* Define um espaçamento menor entre o h1 e o h3 */
+            
+            
+           
+        }
+
+        body {
+            background-color: #f0e6c8; 
+        }
+
+        p {
+          text-align: center;
+          font-family: 'Courier';
+
+        }
+        .styled-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 8px;
+            background-color: rgb(0,0,139);
+            color: white;
+           
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            font-family: 'Courier';
+
+    
+        }
+
+        .styled-button:hover {
+            background-color: rgb(100,100,100);
+            transform: scale(1.05);
+            
+        }
+
+        .styled-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        }
+        
+        .oi {
+          text-align: justify;
+
+        }
+       
+        .one {
+            border-spacing: 100px; /* Ajuste conforme necessário */
+            border-collapse: collapse; /* Faz com que as bordas se juntem, sem espaço entre elas */
+
+           
+        }
+       
+       
+        .dois {
+            margin: 50px 0; /* Espaçamento opcional para separar o texto do botão */
+           
+        }
+      
+
+        .text-content {
+            border: 1px solid black; /* Aplica a borda ao redor do texto */
+            padding: 10px;
+            margin: 10px 0; /* Espaçamento opcional para separar o texto do botão */
+        }
+
+        .ok {
+          font-family: 'Courier';
+
+        }
+       
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th {
+            text-align: center;
+            padding: 20px;
+        }
+        .icon {
+            font-size: 2em;
+            color: #333;
+        }
+        .ok {
+            margin: 0;
+            padding: 5px;
+        }
+        th div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cj {
+            width: 80%; /* Define a largura do parágrafo */
+            margin: 50px auto 0;
+            text-align: justify; /* Justifica o texto */
+        }
+        
+        .highlight {
+    background-color: rgb(0, 0, 139); /* Cor de fundo azul escuro */
+    color: white; /* Cor do texto para garantir boa visibilidade */
+    padding: 2px 4px; /* Espaçamento interno para deixar o destaque mais evidente */
+    border-radius: 3px; /* Bordas arredondadas, opcional */
+
+    
+    
+}
+
+h4{
+  color:rgb(0,0,139);
+}
+
+p {
+    margin-bottom: 20px; /* Aumenta o espaço abaixo do parágrafo */
+}
+p {
+    margin-bottom: 15px; /* Espaço abaixo do parágrafo */
+}
+
+h3 {
+    margin-top: 25px; /* Espaço acima do <h3> */
+}
+
+.b{
+  color : rgb(0,0,139);
+  width: 80%; /* Define a largura do parágrafo */
+            margin: 50px auto 0;
+            text-align: justify; /* Justifica o texto */
+}
+
+
+
+
+
+h2 {
+    text-align: center;
+}
+
+.styled-table {
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-color: black;
+    font-family: courier;
+}
+
+
+
+
+
+
+   </style>
+
+
+
+</head>
+
+<body>
+
+<ul>
+   
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Menu</a>
+    <div class="dropdown-content">
+    <a href="bemvindo.html"> <p> Bem vindo</i> </p> </a>
+    <a href="m1go.html"> <p> Módulo I </i> </p> </a>
+    <a href="m2go.html"> <p>Módulo II </p> </a>
+    <a href="m3go.html"> <p>Módulo III</p> </a>
+
+
+
+  </li>
+
+
+</ul>
+
+<table>
+
+
+<th>
+
+
+
+
+<h3> <span class = "highlight"> Vantagens...</h3>
+<h4 >Simplicidade e Facilidade de Uso:</h4>
+
+<p class="cj"> • Go é uma linguagem relativamente simples, com uma sintaxe limpa e fácil de ler. 
+    Isso facilita o aprendizado para novos programadores e permite que as equipes se tornem produtivas 
+    rapidamente; </p>
+
+
+<h4 >Alto Desempenho: </h4>
+
+<p class="cj"> • Go é uma linguagem compilada que oferece performance próxima de linguagens 
+    como C e C + +. Isso é muito vantajoso para aplicativos de alta performance, como servidores 
+    e sistemas distribuídos;
+</p>
+
+<h4 >Concorrência:</h4>
+<p class="cj">• Go foi projetado com um modelo de concorrência embutido, baseado em goroutines, 
+    que facilita o desenvolvimento de programas concorrentes e paralelos. É uma grande vantagem para 
+    aplicativos que precisam lidar com múltiplas operações ao mesmo tempo, como servidores web;
+</p>
+
+
+<h4 >Biblioteca Padrão Rica:</h4>
+<p class="cj">• A biblioteca padrão do Go é ampla e cobre muitas funcionalidades essenciais, como
+     manipulação de strings, formatos de dados e redes, o que facilita o desenvolvimento sem a necessidade
+      de bibliotecas externas para muitas tarefas;
+</p>
+
+
+<h4> Facilidade de Implementação: </h4>
+<p class= "cj">• Go compila em código de máquina, produzindo executáveis independentes sem dependências
+     externas. Isso facilita a implantação de aplicativos, especialmente em ambientes de contêiner, 
+     como o Docker;
+
+</p>
+
+<h4> Comunidade Crescente e Suporte Corporativo: </h4>
+<p class= "cj"> • Por ter sido desenvolvido pela Google, Go tem um suporte significativo de uma grande 
+    comunidade e de empresas, incluindo suporte para desenvolvimento em nuvem e uma infraestrutura 
+    robusta.
+</p>
+
+<h3> <span class = "highlight"> Desvantagens...</h3>
+
+<h4> Gestão Limitada de Bibliotecas:</h4>
+<p class= "cj"> • Go tem uma quantidade menor de bibliotecas e pacotes, comparado a outras linguagens 
+    populares, como Python ou JavaScript. Isso pode limitar o desenvolvimento de certas aplicações que 
+    dependem de bibliotecas de terceiros;
+
+</p>
+
+<h4> Falta de Generics (até recentemente): </h4>
+<p class= "cj"> • Até a versão 1.18, Go não tinha suporte a generics, o que tornava o código mais complexo
+     e dificultava a criação de funções e estruturas reutilizáveis. Embora isso tenha sido parcialmente
+      resolvido, o uso de generics ainda está amadurecendo na linguagem;
+</p>
+
+<h4> Sistema de Tipagem Simples:</h4>
+<p class= "cj"> • A simplicidade do sistema de tipos de Go pode ser uma limitação para desenvolvedores 
+    que buscam recursos mais avançados, como herança e polimorfismo encontrados em linguagens orientadas
+     a objetos mais completas;
+
+</p>
+
+<h4> Sintaxe Estrita e Pouco Flexível: </h4>
+<p class= "cj">• Go foi projetado para ser simples e direto, o que leva a algumas limitações, como a 
+    ausência de exceptions (tratamento de erros é feito manualmente) e a necessidade de verificar erros 
+    constantemente, o que pode aumentar a verbosidade do código;
+</p>
+
+<h4> Desempenho Inferior para Cálculos Matemáticos Complexos: </h4>
+<p class= "cj">•  Embora tenha boa performance para muitas tarefas, Go não é otimizado para cálculos 
+    científicos ou numéricos complexos. Outras linguagens, como C + + e Rust, ainda são mais indicadas
+     para este tipo de trabalho;
+
+</p>
+
+<h4> Curva de Aprendizado para Programação Concorrente: </h4>
+<p class= "cj">•  Embora o modelo de goroutines seja uma vantagem, ele exige uma compreensão cuidadosa sobre como gerenciar concorrência para evitar problemas como deadlocks e race conditions, o que pode ser difícil para novos desenvolvedores.
+
+
+</p>
+
+<h3 ><span class = "highlight"> Aplicações</h3>
+
+<p class= "cj"> - O Golang é amplamente utilizado no desenvolvimento de sistemas modernos, especialmente onde escalabilidade, desempenho e simplicidade são necessários. Ele é a escolha de várias empresas e desenvolvedores para criar serviços, ferramentas de infraestrutura, e sistemas de backend robustos. Abaixo estão algumas das aplicações mais comuns do Go tanto no dia a dia quanto no mundo da tecnologia:
+</p>
+
+
+<p class= "b">  1. Desenvolvimento de APIs e Backends de Serviços Web</p>
+<p class= "cj">  Go é amplamente utilizado para construir servidores web e APIs por sua simplicidade e alta performance. Com seu suporte nativo para concorrência, ele consegue lidar com grande volume de solicitações simultâneas de maneira eficiente. Exemplos:
+</p>
+<p class= "cj"> • APIs RESTful e GraphQL: Como o Go é eficiente na gestão de threads, ele é ideal para APIs que precisam responder rapidamente a várias requisições simultâneas.
+</p>
+<p class= "cj"> • Plataformas de e-commerce e redes sociais: Várias dessas plataformas, como Mercado Livre e SoundCloud, usam Go para gerenciar seus backends de forma escalável.
+</p>
+
+
+<p class= "b">  2. Microsserviços e Arquiteturas Baseadas em Contêineres</p>
+<p class= "cj"> No mundo moderno de microsserviços, onde grandes sistemas são divididos em serviços menores e independentes, o Go é uma escolha popular. Ele facilita o desenvolvimento de aplicações independentes que podem ser facilmente executadas e escaladas com containers (Docker e Kubernetes, por exemplo).
+</p>
+<p class= "cj"> • Kubernetes: A plataforma de orquestração de contêineres Kubernetes, amplamente utilizada, é escrita em Go.
+</p>
+<p class= "cj"> • Docker: Outra ferramenta fundamental na arquitetura de microsserviços, Docker também foi desenvolvida em Go.
+</p>
+
+
+<p class= "b">  3. Ferramentas de Automação e DevOps
+</p>
+<p class= "cj"> No universo DevOps, onde a automação é essencial, Go se destaca por ser rápido e independente de plataforma. Ele é amplamente usado em ferramentas de monitoramento, provisionamento e orquestração de infraestrutura.
+</p>
+<p class= "cj"> • Ferramentas de monitoramento e logging: Ferramentas como Prometheus, Grafana, Jaeger (para rastreamento distribuído) foram escritas em Go.
+</p>
+<p class= "cj"> • Infraestrutura como Código (IaC): Ferramentas como o Terraform, para gerenciamento de infraestrutura em nuvem, também usam Go.
+</p>
+
+
+<p class= "b">  4. Plataformas de Streaming e Compartilhamento de Arquivos
+</p>
+<p class= "cj">  Devido à sua capacidade de lidar com tarefas concorrentes, Go é muito eficaz para criar plataformas de streaming e compartilhamento de arquivos, onde várias conexões precisam ser gerenciadas ao mesmo tempo.
+</p>
+<p class= "cj"> • Plataformas de mídia e som: SoundCloud, por exemplo, usa Go para suportar sua infraestrutura de áudio e streaming.
+</p>
+<p class= "cj"> • Softwares P2P: Ferramentas de compartilhamento de arquivos, como BitTorrent e protocolos semelhantes, utilizam Go em algumas de suas aplicações.
+</p>
+
+<p class= "b">  5. Desenvolvimento de Jogos e Realidade Virtual (RV)
+</p>
+<p class= "cj">  Embora não seja a escolha principal para jogos de alto desempenho, Go é usado no desenvolvimento de jogos casuais e aplicativos de RV, especialmente para servidores de jogos online.
+</p>
+<p class= "cj"> • Servidores de jogos e chat multiplayer: Como o Go oferece baixa latência e suporte a concorrência, ele é uma boa escolha para jogos de multiplayer online.
+</p>
+
+
+
+<p class= "b">  6. Plataformas de Comércio Eletrônico e Finanças
+</p>
+<p class= "cj"> Go é usado no backend de plataformas financeiras e de e-commerce, onde eficiência e baixa latência são críticas.
+</p>
+<p class= "cj"> • Sistemas de pagamento: empresas de pagamento, como PayPal, usam Go para aumentar a performance de seus sistemas de transação.
+</p>
+<p class= "cj"> • Fintechs: muitas fintechs usam Go para sistemas de transações rápidas e seguras.
+</p>
+
+<p class= "b">  7. Aplicações em Ciência de Dados e Machine Learning
+</p>
+<p class= "cj"> Embora Python seja a escolha principal para ciência de dados, Go está ganhando espaço em áreas onde é necessária alta performance e execução paralela. </p>
+<p class= "cj"> • Processamento de dados: Ferramentas para processamento paralelo, como Pachyderm (para pipeline de dados), usam Go.
+</p>
+<p class= "cj"> • Machine Learning em produção: bibliotecas e APIs de machine learning estão surgindo em Go para implementar modelos em ambientes de produção.
+</p>
+
+
+<p class= "b">  Exemplo no dia a dia 
+</p>
+<p class="cj">Mesmo que não esteja sempre visível, Go está presente em muitos serviços usados diariamente:
+</p>
+<p class="cj"> - Streaming de música (SoundCloud);</p>
+<p class="cj"> - Redes sociais (usando APIs construídas em Go);</p>
+<p class="cj"> - Serviços em nuvem (Google Cloud e AWS usam Go em várias aplicações internas e SDKs);</p>
+<p class="cj"> - Ferramentas de desenvolvimento e automação, usadas por desenvolvedores para gerenciar servidores e redes.
+</p>
+
+
+<h3 ><span class = "highlight"> Conceitos básicos da linguagem:</h3>
+<h4> Estrutura do programa</h4>
+<p class= "cj"> • Um programa Go começa com uma declaração de pacote, seguida das importações necessárias e a função principal (main), que é o ponto de entrada. Um exemplo básico:
+</p>
+
+<p class= "cj"><img src="ex1.png" alt="Descrição da imagem"></p>
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex1.1.png" alt="Descrição da imagem"></p>
+
+
+<p class ="b">1. Pacotes (Packages)
+</p>
+<p class="cj">O primeiro elemento de qualquer programa Go é a declaração de pacote, que define o escopo do código. Para uma aplicação executável, usamos o pacote main, que indica ao compilador que é o ponto de entrada.
+</p>
+<p class="cj">• package main: define o pacote principal de uma aplicação.
+</p>
+<p class="cj">• import "fmt": importa o pacote fmt, que oferece funcionalidades para entrada e saída formatada.
+</p>
+
+<p class=" b">2. Tipos de Variáveis </p>
+<p class="cj">Go é uma linguagem de tipagem estática, ou seja, o tipo das variáveis é conhecido em tempo de compilação. Ela suporta os principais tipos de variáveis:
+</p>
+<p class="cj">• Inteiros: int, int8, int16, int32, int64 (variáveis inteiras de diferentes tamanhos).
+</p>
+<p class="cj">• Decimal: float32, float64 (números com casas decimais).</p>
+<p class="cj">• Booleanos: bool (valores true ou false). </p>
+<p class=" cj">• Strings: string (sequência de caracteres).</p>
+<p class=" cj">• Arrays e Slices: []int, []string (coleções de elementos do mesmo tipo).</p>
+<p class=" cj">• Structs: estruturas de dados definidas pelo usuário.</p>
+<p class=" cj">• Maps: map[keyType]valueType, como dicionários.</p>
+
+<p class=" b"> Declaração de variáveis </p>
+
+<p class="cj">Inteiros:</p>
+<p class= "cj"><img src="ex2.1.png" alt="Descrição da imagem"></p>
+<p class="cj">Terminal: </p>
+<p class= "cj"><img src="ex2.2.png" alt="Descrição da imagem"></p>
+
+
+<p class="cj">Decimal:</p>
+<p class= "cj"><img src="ex3.1.png" alt="Descrição da imagem"></p>
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex3.2.png" alt="Descrição da imagem"></p>
+
+
+<p class="cj">Booleanos:</p>
+<p class= "cj"><img src="ex4.1.png" alt="Descrição da imagem"></p>
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex4.2.png" alt="Descrição da imagem"></p>
+
+
+<p class="cj">Strings:</p>
+<p class= "cj"><img src="ex5.1.png" alt="Descrição da imagem"></p>
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex5.2.png" alt="Descrição da imagem"></p>
+
+<p class="cj">Arrays:</p>
+<p class= "cj"><img src="ex6.1.png" alt="Descrição da imagem"></p>
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex6.2.png" alt="Descrição da imagem"></p>
+
+<p class="cj">Slices:</p>
+<p class= "cj"><img src="ex7.1.png" alt="Descrição da imagem"></p>
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex7.2.png" alt="Descrição da imagem"></p>
+
+
+<p class="cj">Structs:</p>
+<p class= "cj"><img src="ex8.1.png" alt="Descrição da imagem"></p>
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex8.2.png" alt="Descrição da imagem"></p>
+
+<p class="cj">Maps</p>
+<p class= "cj"><img src="ex9.1.png" alt="Descrição da imagem"></p>
+<p class="cj">Terminal:</p>
+<p class= "cj"><img src="ex9.2.png" alt="Descrição da imagem"></p>
+
+
+
+<p class="cj">- Go permite a declaração explícita e a inferência de tipo:
+</p>
+<p class="cj">var x int = 10       // Declaração explícita
+</p>
+<p class="cj">y := 20              // Declaração com inferência de tipo (x é do tipo `int`)
+</p>
+<p class="cj">var name = "Alice"   // Inferência também é possível com `var`
+</p>
+
+<p class="b">3. Operadores</p>
+<p class="cj">Go tem uma série de operadores comuns em outras linguagens:</p>
+<p class="cj">• Aritméticos: +, -, *, /, %</p>
+<p class= "cj"><img src="ex10.png" alt="Descrição da imagem"></p>
+
+<p class="cj">• Comparação: ==, !=, <, >, <=, >=</p>
+<p class= "cj"><img src="ex10.1.png" alt="Descrição da imagem"></p>
+
+<p class="cj">• Lógicos: &&, ||, !</p>
+<p class= "cj"><img src="ex10.2.png" alt="Descrição da imagem"></p>
+
+<p class="cj">• Atribuição: =, +=, -=, *=, /=, %=</p>
+<p class= "cj"><img src="ex10.3.png" alt="Descrição da imagem"></p>
+
+<p class="cj">• Incremento e Decremento: ++, --</p>
+<p class= "cj"><img src="ex10.4.png" alt="Descrição da imagem"></p>
+
+
+
+
+<p class="b">4. Estruturas de Controle</p>
+<p class="cj">Condicionais: </p>
+<p class="cj">No Go, as estruturas condicionais incluem if, else if, e else. Essas estruturas permitem que o programa tome decisões baseadas em condições específicas. Uma das peculiaridades em Go é que não são necessários parênteses em torno das condições, apenas as chaves {} para delimitar o bloco de código que será executado.</p>
+<p class="cj">• If: Verifica uma condição e executa o bloco de código associado se a condição for verdadeira.</p>
+<p class= "cj"><img src="ex11.png" alt="Descrição da imagem"></p>
+<p class="cj">Se x for maior que 10, o programa executa o que está dentro do bloco if. Caso contrário, ele ignora o bloco.</p>
+
+<p class="cj">• Else: Executado quando a condição no if é falsa e não há um else if com uma condição verdadeira. É um "caminho alternativo".</p>
+<p class= "cj"><img src="ex11.1.png" alt="Descrição da imagem"></p>
+<p class="cj">Se x não for maior que 10, o bloco else é executado.</p>
+
+<p class="cj">• Else If: Adiciona uma condição adicional após um if. Isso permite verificar várias condições em sequência.</p>
+<p class= "cj"><img src="ex11.2.png" alt="Descrição da imagem"></p>
+<p class="cj">Neste exemplo, o programa verifica três condições:</p>
+<p class="cj">- Se x é maior que 10, ele executa o bloco if.</p>
+<p class="cj">- Se x for exatamente 10, ele pula o if e executa o else if.</p>
+<p class="cj">- Caso nenhuma dessas condições seja verdadeira, ele executa o bloco else.</p>
+
+<p class="cj">Switch:</p>
+<p class="cj">No Go, o switch verifica uma variável ou condição, executa o primeiro case verdadeiro e para, sem precisar de break. Se nenhum case for verdadeiro, o default é executado.</p>
+<p class= "cj"><img src="ex12.png" alt="Descrição da imagem"></p>
+<p class="cj">Esse tipo de switch é útil quando você quer testar diferentes condições sem uma variável central.</p>
+
+<p class="cj">For:</p>
+<p class="cj">No Go, o for é a única estrutura de loop. Ele pode funcionar como um for tradicional (for inicialização; condição; pós-iteração), como um while (for condição) ou até como um loop infinito (for {}). Aqui está um exemplo de loop de 1 a 5:</p>
+<p class= "cj"><img src="ex13.png" alt="Descrição da imagem"></p>
+
+<p class="b">5. Funções</p>
+<p class="cj">Função Simples: Uma função que recebe parâmetros e retorna um único valor.</p>
+<p class= "cj"><img src="ex14.png" alt="Descrição da imagem"></p>
+<p class="cj">Neste exemplo, a função add recebe dois inteiros (a e b) e retorna a soma deles como um inteiro.</p>
+
+<p class="cj">Função com Múltiplos Valores: Uma função que pode retornar mais de um valor.</p>
+<p class= "cj"><img src="ex15.png" alt="Descrição da imagem"></p>
+<p class="cj">Aqui, a função divide recebe dois inteiros (a e b) e retorna dois valores: o quociente (resultado da divisão) e o resto.</p>
+
+<p class="b">6. Estruturas de Dados Personalizadas (Structs)</p>
+<p class="cj"> Em Go, structs são tipos de dados personalizados que agrupam variáveis relacionadas. Elas ajudam a modelar dados complexos de forma organizada.</p>
+<p class= "cj"><img src="ex16.png" alt="Descrição da imagem"></p>
+
+
+<p class="b">7. Arrays e Slices</p>
+<p class="cj">Em Go, arrays e slices são usados para armazenar coleções de elementos, mas têm diferenças importantes.</p>
+<p class="cj">Arrays:</p>
+<p class="cj">• Definição: Um array é uma coleção de elementos de tamanho fixo. O tamanho é parte do tipo do array e não pode ser alterado após a declaração.</p>
+<p class="cj">• Sintaxe: var nome [tamanho]tipo</p>
+<p class= "cj"><img src="ex17.png" alt="Descrição da imagem"></p>
+
+<p class="cj">Slices:</p>
+<p class="cj">• Definição: Um slice é uma abstração mais flexível sobre arrays. Eles podem crescer e encolher, e não têm um tamanho fixo. Um slice é, essencialmente, uma referência a um array subjacente.</p>
+<p class="cj">• Sintaxe: var nome []tipo</p>
+<p class= "cj"><img src="ex17.1.png" alt="Descrição da imagem"></p>
+
+<p class="b">8. Maps</p>
+<p class="cj">Em Go, um map é uma coleção de pares chave-valor, onde cada chave é única. Ele permite acesso rápido aos valores usando as chaves. A sintaxe básica para declarar um map é var nome map[chave]valor, e pode ser inicializado com make.</p>
+<p class= "cj"><img src="ex18.png" alt="Descrição da imagem"></p>
+
+
+
+<p class="b">EXEMPLOS MAIS AVANÇADOS:
+</p>
+
+<p class="b">Trabalhando com Erros Personalizados</p>
+<p class="cj">Em Go, podemos criar erros personalizados usando errors.New para mensagens fixas e fmt.Errorf para mensagens formatadas.</p>
+
+<p class="cj">Exemplo com errors.New:</p>
+<p class="cj">Usamos errors.New para criar um erro simples, como ao tentar dividir por zero:</p>
+<p class= "cj"><img src="ex19.png" alt="Descrição da imagem"></p>
+<p class="cj">Exemplo com fmt.Errorf:</p>
+<p class="cj">Com fmt.Errorf, podemos incluir mais contexto, como valores específicos:</p>
+<p class= "cj"><img src="ex19.1.png" alt="Descrição da imagem"></p>
+<p class="cj">Isso torna o erro mais informativo: "Erro: não é possível dividir 10 por 0".</p>
+
+
+<p class="b">Uso Avançado de Slices</p>
+<p class="cj">Criação e Adição: nums := []int{1, 2, 3} cria um slice. append(nums, 4, 5) adiciona elementos ao final.</p>
+<p class="cj">Corte de Slice: subSlice := nums[1:4] cria um "sub-slice" do índice 1 ao 3. Alterações em subSlice também afetam nums porque compartilham a mesma memória.</p>
+<p class="cj">Cópia de Slice: copySlice := make([]int, len(nums)) cria uma cópia independente com copy(copySlice, nums). Modificar copySlice não afeta nums.</p>
+<p class= "cj"><img src="ex20.png" alt="Descrição da imagem"></p>
+
+
+<p class="b">Canal com Buffer para Comunicação</p>
+<p class="cj">Criação do Canal:</p>
+<p class="cj">• messages := make(chan string, 3) cria um canal com um buffer de tamanho 3, permitindo armazenar até três mensagens antes que uma leitura seja necessária.</p>
+<p class="cj">Envio de Mensagens:</p>
+<p class="cj">• As mensagens "Mensagem 1", "Mensagem 2", e "Mensagem 3" são enviadas para o canal. Como o canal tem um buffer, isso pode ser feito sem que haja goroutines esperando para receber as mensagens.</p>
+<p class="cj">Leitura de Mensagens:</p>
+<p class="cj">• fmt.Println(<-messages) lê e imprime cada mensagem na ordem em que foram enviadas.</p>
+<p class= "cj"><img src="ex21.png" alt="Descrição da imagem"></p>
+
+<p class="b"> Exemplo de HTTP Server Simples</p>
+<p class="cj">O Go facilita a criação de servidores HTTP simples e eficientes. O exemplo abaixo ilustra um servidor que responde a diferentes rotas:</p>
+<p class= "cj"><img src="ex22.png" alt="Descrição da imagem"></p>
+<p class="cj">1. Handlers:</p>
+<p class="cj">• rootHandler: Responde na raiz com uma mensagem de boas-vindas.</p>
+<p class="cj">• helloHandler: Retorna uma saudação na rota /hello.</p>
+<p class="cj">• goodbyeHandler: Responde com uma despedida apenas para requisições POST na rota /goodbye.</p>
+
+<p class="cj">2. Execução:</p>
+<p class="cj">• Use go run main.go para iniciar o servidor na porta 8080.</p>
+<p class="cj">• Acesse as rotas no navegador ou com ferramentas como curl para ver as respostas.</p>
+<p class="cj">Esse modelo é a base para desenvolver APIs e aplicativos web em Go.</p>
+
+
+<p class="b"> Padrão de Erro e Recuperação com defer e recover
+</p>
+<p class="cj">Defer e recover são usados para tratar panics e evitar encerramentos abruptos.</p>
+<p class="cj">1. Defer: Adia a execução de uma função até que a função atual termine.</p>
+<p class="cj">2. Recover: Captura panics para que o programa possa continuar a execução.</p>
+<p class= "cj"><img src="ex23.png" alt="Descrição da imagem"></p>
+<p class="cj">• safeDivide: Tenta dividir a por b. Se b for zero, um pânico ocorre, mas recover o captura.</p>
+<p class="cj">• O programa continua a executar após o pânico.</p>
+
+
+<h3><span class = "highlight"> Instalação e configuração, história da linguagem...</span></h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ma2sejKB_lA?si=DEnYXPjBmUQWVSDT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </th>
+
+
+
+</body>
+</html>
+
