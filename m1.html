@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <h1> MÓDULO I <img src="python.jpg" alt="Descrição da imagem" width="auto" height="60" class= "ima"></h1>
+    
+    <h3 class = 'o'> By Rarol </h3>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style >
+   
+
+   .o{
+
+    text-align: center;
+    background-color:#f0e6c8;
+    color: black;
+   }
+
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+   }
+   
+   li {
+     float: left;
+   }
+   
+   li a, .dropbtn {
+     display: inline-block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   li a:hover, .dropdown:hover .dropbtn {
+     background-color: rgb(0,0,139);
+   }
+   
+   li.dropdown {
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+   }
+   
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+   }
+   
+   
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+
+
+       h1{ 
+            text-align: center;
+            Font-family: Helvetica, Arial, sans-serif;
+            font-size: 70px;
+            color: rgb(0,0,139);
+        }
+
+        h3{ 
+            font-family: 'Courier';
+           
+        }
+
+        h4{
+          text-align: center;
+          font-family: 'Courier';
+
+        }
+
+        .dropdown { 
+            font-family: 'Courier';
+        }
+
+        h1, h3 {
+            margin: 0; /* Remove a margem padrão */
+        }
+        h1 {
+            margin-bottom: 0px; /* Define um espaçamento menor entre o h1 e o h3 */
+        }
+
+
+       
+        h3 {
+            margin-bottom: 20px; /* Define um espaçamento menor entre o h1 e o h3 */
+            
+            
+           
+        }
+
+        body {
+            background-color: #f0e6c8; 
+        }
+
+        p {
+          text-align: center;
+          font-family: 'Courier';
+
+        }
+        .styled-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 8px;
+            background-color: rgb(0,0,139);
+            color: white;
+           
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            font-family: 'Courier';
+
+    
+        }
+
+        .styled-button:hover {
+            background-color: rgb(100,100,100);
+            transform: scale(1.05);
+            
+        }
+
+        .styled-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        }
+        
+        .oi {
+          text-align: justify;
+
+        }
+       
+        .one {
+            border-spacing: 100px; /* Ajuste conforme necessário */
+            border-collapse: collapse; /* Faz com que as bordas se juntem, sem espaço entre elas */
+
+           
+        }
+       
+       
+        .dois {
+            margin: 50px 0; /* Espaçamento opcional para separar o texto do botão */
+           
+        }
+      
+
+        .text-content {
+            border: 1px solid black; /* Aplica a borda ao redor do texto */
+            padding: 10px;
+            margin: 10px 0; /* Espaçamento opcional para separar o texto do botão */
+        }
+
+        .ok {
+          font-family: 'Courier';
+
+        }
+       
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th {
+            text-align: center;
+            padding: 20px;
+        }
+        .icon {
+            font-size: 2em;
+            color: #333;
+        }
+        .ok {
+            margin: 0;
+            padding: 5px;
+        }
+        th div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cj {
+            width: 80%; /* Define a largura do parágrafo */
+            margin: 50px auto 0;
+            text-align: justify; /* Justifica o texto */
+        }
+        
+        .highlight {
+    background-color: rgb(0, 0, 139); /* Cor de fundo azul escuro */
+    color: white; /* Cor do texto para garantir boa visibilidade */
+    padding: 2px 4px; /* Espaçamento interno para deixar o destaque mais evidente */
+    border-radius: 3px; /* Bordas arredondadas, opcional */
+
+    
+    
+}
+
+h4{
+  color:rgb(0,0,139);
+}
+
+p {
+    margin-bottom: 20px; /* Aumenta o espaço abaixo do parágrafo */
+}
+p {
+    margin-bottom: 15px; /* Espaço abaixo do parágrafo */
+}
+
+h3 {
+    margin-top: 25px; /* Espaço acima do <h3> */
+}
+
+.b{
+  color : rgb(0,0,139);
+  width: 80%; /* Define a largura do parágrafo */
+            margin: 50px auto 0;
+            text-align: justify; /* Justifica o texto */
+}
+
+
+
+
+
+h2 {
+    text-align: center;
+}
+
+.styled-table {
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-color: black;
+    font-family: courier;
+}
+
+
+
+
+
+
+   </style>
+
+
+
+</head>
+
+<body>
+
+<ul>
+   
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Menu</a>
+    <div class="dropdown-content">
+    <a href="bemvindo.html"> <p> Bem vindo</i> </p> </a>
+    <a href="m1.html"> <p> Módulo I </i> </p> </a>
+    <a href="m2.html"> <p>Módulo II </p> </a>
+    <a href="m3.html"> <p>Módulo III</p> </a>
+
+
+
+  </li>
+
+
+</ul>
+
+<table>
+
+
+<th>
+
+
+
+
+<h3> <span class = "highlight"> Vantagens...</h3>
+<h4 >Python é fácil de Ler, escrever e Aprender:</h4>
+
+<p class="cj"> • Como o Python é uma linguagem de programação de alto nível, se torna uma linguagem fácil de ler e entender.
+Python é mesmo fácil de aprender , e por isso é altamente recomendada para iniciantes hoje em dia. Com o Python você precisa de menos linhas de código para realizar as mesmas tarefas se comparado com linguagens como Java ou C++.
+;</p>
+
+
+<h4 >O Python é uma linguagem interpretada:</h4>
+
+<p class="cj"> • Uma linguagem interpretada significa que o código é executado linha por linha, em caso de algum erroele para sua execução e avisa qual erro que ocorreu, e o Python funciona dessa forma.
+Python mostra somente um erro mesmo se o programa tiver vários erros, facilitando o processo de “debug” do código;</p>
+
+<h4 >Melhora a produtividade:</h4>
+<p class="cj">• Por ser fácil de escrever e programar, Python melhora significativamente a produtividade dos programadores. Devido a sua simplicidade, desenvolvedores podem focar na solução do problema e não perdem muito tempo tentando entender a sintaxe. Você consegue fazer mais com menos código; </p>
+
+
+<h4 >Declaração de Variáveis:</h4>
+<p class="cj">• O Python automaticamente define o tipo da variável durante sua execução, ou seja, o programador não precisa se preocupar em declarar variáveis e seus tipos.
+Para criá-las, basta utilizar um comando de atribuição, que define seu tipo e seu valor, conforme vemos no código abaixo: </p>
+
+<p class="cj"> mensagem = 'Exemplo de mensagem!'</p>
+<p class="cj">numero = 36</p>
+<p class="cj">real = 3.141592653589931</p>
+
+<h4> Python é multiplataforma: </h4>
+<p class= "cj">• O Python é uma linguagem que pode ser utilizada para diversas plataformas como Windows, Linux, Mac, Android… Isso é possível por ela ser uma linguagem interpretada, ou seja outras máquinas virtuais podem interpretar seu código;
+</p>
+
+<h4> Python é Open Source: </h4>
+<p class= "cj"> • Isso significa que você pode baixar o código-fonte, modificar e até distribuir sua versão do Python (Muitas empresas usam para casos específicos). Ele é gratuito para uso e distribuição; </p>
+
+<h3> <span class = "highlight"> Desvantagens...</h3>
+
+<h4> Python é lento:</h4>
+<p class= "cj"> • Geralmente linguagens interpretadas são mais lentas, e é por isso que o Python também sofre desse mal. A natureza dinâmica do Python é responsável pela sua baixa velocidade de processamento, pois existe um trabalho extra enquanto executa o código. Portanto é bom evitar o uso de Python em aplicações que precisam de uma melhor performance na velocidade;
+</p>
+
+<h4> Python é ruim para Mobile: </h4>
+<p class= "cj"> • Triste, mas é verdade. As aplicações escritas em Python geralmente são utilizadas em server-side. Isso ocorre, pelo motivo anterior: tem um baixo poder de processamento se comparado com outras linguagens para dispositivos móveis;</p>
+
+<h4> Acesso ao Banco de Dados:</h4>
+<p class= "cj"> • Todos já concordamos que programar em Python é mais fácil do que em outras linguagens. Mas quando interagimos com o banco de dados deixa a desejar. A camada de acesso ao Banco de Dados do Python ainda é muito primitiva e mal feita em comparação a outras linguagens de programação populares. Por exemplo: o java que utiliza JDBC e ODBC;
+</p>
+
+<h4> Erros de Execução: </h4>
+<p class= "cj">• Já sabemos que no Python o tipo de variável pode ser modificado a qualquer momento, isso pode ser uma vantagem, como também uma desvantagem, pois essa situação se não for bem controlada pode causar Runtime Errors; </p>
+
+<h4> Python utiliza muita memória:</h4>
+<p class= "cj">• Para prover toda sua simplicidade para o programador, a linguagem de Programação Python utiliza muita memória e um péssimo gerenciamento de memória, diferente do Java. Isso é uma desvantagem séria quando se vai desenvolver aplicações que requerem uma boa otimização de memória.
+</p>
+
+<h3 ><span class = "highlight"> Aplicações</h3>
+
+<p class= "b">  1. Desenvolvimento Web</p>
+<p class= "cj"> - Frameworks: Django, Flask, Pyramid.</p>
+<p class= "cj"> - Descrição: Python é usado para desenvolver backends de aplicações web, APIs, e sistemas completos. Frameworks como Django e Flask simplificam o processo de desenvolvimento web, permitindo a criação rápida de sites robustos e seguros.</p>
+
+
+<p class= "b">  2. Ciência de Dados e Análise de Dado</p>
+<p class= "cj"> - Ferramentas: Pandas, NumPy, Matplotlib, Seaborn, SciPy.</p>
+<p class= "cj"> - Descrição: Python é amplamente utilizado em ciência de dados para manipulação, análise, e visualização de grandes volumes de dados. É a linguagem preferida para trabalhos com dados devido à sua simplicidade e poderosas bibliotecas.
+</p>
+
+<p class= "b">   3. Machine Learning e Inteligência Artificial</p>
+<p class= "cj"> - Bibliotecas: TensorFlow, PyTorch, Scikit-learn, Keras.</p>
+<p class= "cj"> - Descrição: Python é a linguagem mais popular para o desenvolvimento de algoritmos de machine learning e IA. Ele fornece bibliotecas que permitem a criação e treinamento de modelos complexos, processamento de linguagem natural (NLP), reconhecimento de imagem, entre outros.
+</p>
+
+<p class= "b">    4. Automação e Scripting</p>
+<p class= "cj"> - Ferramentas: Selenium, BeautifulSoup, Requests, PyAutoGUI.</p>
+<p class= "cj"> - Descrição: Python é frequentemente usado para automatizar tarefas repetitivas, como web scraping, gerenciamento de arquivos, automação de processos de negócios e muito mais. Sua sintaxe simples torna-o ideal para scripts de automação.
+</p>
+
+<p class= "b">  5. Desenvolvimento de Jogos</p>
+<p class= "cj"> - Framework: Pygame, Panda3D, Godot (com suporte a Python).</p>
+<p class= "cj"> - Descrição: Python pode ser usado para criar jogos, especialmente jogos 2D simples. Frameworks como Pygame fornecem as ferramentas necessárias para o desenvolvimento de jogos e simulações.
+</p>
+
+
+<p class= "b">   6. Desenvolvimento de Aplicações de Desktop</p>
+<p class= "cj"> - Bibliotecas: Tkinter, PyQt, Kivy, wxPython.</p>
+<p class= "cj"> - Descrição: Python pode ser utilizado para desenvolver interfaces gráficas de usuário (GUIs) para aplicações de desktop. Ferramentas como Tkinter e PyQt permitem criar aplicações com interfaces ricas e funcionais.
+</p>
+
+<p class= "b">    7. Internet das Coisas (IoT)</p>
+<p class= "cj"> - Plataformas: Raspberry Pi, MicroPython, CircuitPython.</p>
+<p class= "cj"> - Descrição: Python é uma linguagem popular em projetos de IoT, onde é utilizado para programar dispositivos como o Raspberry Pi. Python facilita a interação com sensores, dispositivos e comunicação em redes de IoT.
+</p>
+
+<p class= "b">    8. Cibersegurança e Hacking Ético</p>
+<p class= "cj"> - Ferramentas: Nmap, Scapy, PwnTools.</p>
+<p class= "cj"> - Descrição: Python é amplamente utilizado em cibersegurança para análise de vulnerabilidades, criação de ferramentas de exploração, automação de testes de penetração, e desenvolvimento de ferramentas de segurança personalizadas.
+</p>
+
+
+
+<h3 ><span class = "highlight"> Conceitos básicos da linguagem:</h3>
+<h4> Estrutura do programa</h4>
+<p class= "cj"> • As estruturas de programas em Python seguem uma organização clara e intuitiva, permitindo aos desenvolvedores escrever código de forma eficiente e legível. Vamos explorar algumas das principais estruturas e como elas são usadas em Python.
+</P>
+
+<p class= "b">    1. Estrutura Sequencial</p>
+<p class= "cj"> - Descrição: A estrutura sequencial é a forma mais básica de organização de um programa. As instruções são executadas uma após a outra, na ordem em que aparecem.
+</p>
+<p class= "cj"><img src="1.png" alt="Descrição da imagem"></p>
+<p class= "cj"> <p class= "cj"> - Explicação: As linhas de código são executadas na sequência em que estão escritas. Primeiro, as variáveis nome e idade são definidas, e depois seus valores são impressos.
+</p>
+
+<p class= "b">2. Estrutura de Decisão (Condicionais)</p>
+<p class= "cj">- Descrição: A estrutura de decisão permite que o programa execute diferentes blocos de código com base em uma condição. Em Python, isso é feito principalmente com if, elif, e else.
+</p>
+<p class= "cj"><img src="2.png" alt="Descrição da imagem"></p>
+<p class= "cj">- Explicação: A nota do aluno é avaliada e, dependendo de seu valor, um conceito é atribuído. O bloco correspondente ao primeiro if ou elif cuja condição é verdadeira será executado.
+</p> 
+
+<p class= "b"> 3. Estrutura de Repetição (Laços)</p>
+<p class = "cj"> - Descrição: Estruturas de repetição permitem executar um bloco de código várias vezes. Python suporta laços for e while.</p>
+<figure>
+<p class= "cj"><img src="3.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Exemplo com for</figcaption>
+</figure>
+<p class = "cj"> - Explicação: O laço for itera cinco vezes, de 0 a 4, imprimindo a mensagem de cada iteração.
+</p>
+
+<figure>
+<p class= "cj"><img src="4.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Exemplo com while</figcaption>
+</figure>
+<p class= "cj">- Explicação: O laço while continua a executar o bloco de código enquanto a condição contador <= 5 for verdadeira. A variável contador é incrementada em cada iteração.
+</p>
+
+<p class= "b"> 4. Estrutura de Funções</p>
+<p class = "cj"> - Descrição: Funções são blocos de código reutilizáveis que executam uma tarefa específica. Elas são definidas usando a palavra-chave def.
+</p>
+<p class= "cj"><img src="5.png" alt="Descrição da imagem"></p>
+<p class = "cj">- Explicação: A função somar é definida para receber dois parâmetros e retornar sua soma. Ela é chamada com os valores 5 e 3, e o resultado é impresso.
+</p>
+
+
+
+<p class= "b"> 5. Estrutura de Módulos</p>
+<p class = "cj"> - Descrição: Em Python, você pode dividir seu código em vários arquivos (módulos) e importá-los conforme necessário. Isso melhora a organização e a reutilização do código.
+</p>
+<p class= "cj"><img src="6.png" alt="Descrição da imagem"></p>
+<p class = "cj"> - Explicação: O código da função cumprimentar está em um arquivo separado (meu_modulo.py). No arquivo principal, ele é importado e utilizado, o que demonstra como os módulos ajudam a organizar o código.</p>
+
+<p class= "b"> 6. Estrutura de Classes (Programação Orientada a Objetos)</p>
+<p class = "cj"> - Descrição: Python é uma linguagem orientada a objetos, o que significa que você pode criar classes para modelar objetos do mundo real e suas interações.
+</p>
+<p class= "cj"><img src="7.png" alt="Descrição da imagem"></p>
+<p class = "cj"> - Explicação: A classe Pessoa tem um construtor (__init__) que inicializa os atributos nome e idade. O método apresentar exibe esses valores. Um objeto pessoa1 é criado a partir da classe e o método apresentar é chamado.
+</p>
+
+
+
+<h4> Variáveis</h4>
+
+<p class= "cj">• Python é uma linguagem de tipagem dinâmica, o que significa que você não precisa declarar explicitamente o tipo de uma variável; o Python o deduz automaticamente com base no valor atribuído. Aqui estão os principais tipos de variáveis em Python:
+  </p>
+<p class= "b">1. Inteiros (int): </p>
+<p class= "cj">Números inteiros, positivos ou negativos.</p>
+<p class= "cj"> idade = 30</p>
+
+<p class= "b">  2. Ponto Flutuante (float): </p>
+<p class= "cj"> Números reais com parte decimal.</p>
+<p class= "cj">  altura = 1.75</p>
+
+<p class= "b">3. Strings (str):  </p>
+<p class= "cj"> Cadeias de caracteres, usadas para texto.</p>
+<p class= "cj"> nome = "Maria"</p>
+
+<p class= "b">4. Booleanos (bool): </p>
+<p class= "cj"> Valores lógicos, True ou False.</p>
+<p class= "cj"> ativo = True</p>
+
+<p class= "b"> 5. Listas (list): </p>
+<p class= "cj"> Coleções ordenadas e mutáveis de elementos.</p>
+<p class= "cj"> numeros = [1, 2, 3, 4, 5]</p>
+
+<p class= "b"> 6. Tuplas (tuple):</p>
+<p class= "cj">Coleções ordenadas e imutáveis de elementos. </p>
+<p class= "cj"> coordenadas = (10, 20)</p>
+
+<p class= "b"> 7. Dicionários (dict):</p>
+<p class= "cj"> Dicionários (dict):</p>
+<p class= "cj">pessoa = {"nome": "João", "idade": 30}</p>
+
+<p class= "cj"><img src="var.png" alt="Descrição da imagem"></p>
+
+<p class = "cj"> • O código acima declara variáveis de diferentes tipos e as exibe junto com seus respectivos tipos usando a função type().
+</p>
+
+<p class = "cj"> • Python infere automaticamente o tipo da variável com base no valor atribuído.
+</p>
+
+
+<h4>Operadores</h4>
+
+<p class= "cj"> • Operadores em Python são símbolos que realizam operações sobre valores e variáveis: aritméticos para cálculos matemáticos; de atribuição para atribuir e atualizar valores; de comparação para comparar valores; lógicos para combinar condições booleanas; de identidade para verificar se dois objetos são o mesmo na memória; e de associação para verificar se um valor está presente em uma sequência.</p> 
+
+<h4> Operadores aritméticos:</h4>
+<p class = "cj"> Os operadores aritméticos são utilizados na execução de operações matemáticas, tais como a soma e a subtração, por exemplo. Vejamos na Tabela 1 a lista deles.</p>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Operador</th>
+            <th>Conceito</th>
+            <th>Exemplo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>+ (Adição ou sinal positivo)</td>
+            <td>- Realiza a soma entre operandos - Adiciona o sinal de positivo ao número</td>
+            <td>7 + 2 = 9</td>
+        </tr>
+        <tr>
+            <td>- (Subtração ou sinal negativo)</td>
+            <td>- Realiza a subtração entre operandos - Adiciona o sinal de negativo ao número</td>
+            <td>-2 - 1 = -3</td>
+        </tr>
+        <tr>
+            <td>* (Multiplicação)</td>
+            <td>Realiza a multiplicação entre operandos</td>
+            <td>5 * 3 = 15</td>
+        </tr>
+        <tr>
+            <td>/ (Divisão)</td>
+            <td>Realiza a divisão entre operandos</td>
+            <td>6 / 3 = 2</td>
+        </tr>
+        <tr>
+            <td>// (Divisão inteira)</td>
+            <td>Realiza a divisão entre operandos e a parte decimal do resultado</td>
+            <td>10 // 6 = 1</td>
+        </tr>
+        <tr>
+            <td>% (Módulo)</td>
+            <td>	Retorna o resto da divisão entre operandos</td>
+            <td>4 % 2 = 0</td>
+        </tr>
+        <tr>
+            <td>** (Exponenciação)</td>
+            <td>Retorna um número elevado a potência de outro</td>
+            <td>4 ** 2  = 16</td>
+        </tr>
+    </tbody>
+</table>
+
+<p class = "cj"> • Exemplo: </p>
+<p class= "cj"><img src="ari.png" alt="Descrição da imagem"></p>
+
+<h4> Operadores de atribuição:</h4>
+<p class = "cj"> - Os operadores de atribuição atribuem valor a uma variável. Na Tabela 2 temos uma lista desses operadores.</p>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Operador</th>
+            <th>Exemplo</th>
+            <th>Equivalente a...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>=</td>
+            <td>X = 1</td>
+            <td>X = 1</td>
+        </tr>
+        <tr>
+            <td>+=</td>
+            <td>X += 1</td>
+            <td>X = X + 1</td>
+        </tr>
+        <tr>
+            <td>-=</td>
+            <td>x -= 1</td>
+            <td>x = x - 1</td>
+        </tr>
+        <tr>
+            <td>*=</td>
+            <td>x *= 1</td>
+            <td>x = x * 1</td>
+        </tr>
+        <tr>
+            <td>/=</td>
+            <td>x /= 1</td>
+            <td>x = x / 1</td>
+        </tr>
+        <tr>
+            <td>%=</td>
+            <td>		x %= 1</td>
+            <td>x = x % 1</td>
+        </tr>
+       
+    </tbody>
+</table>
+
+<p class = "cj"> • Exemplo: </p>
+<p class= "cj"><img src="atri.png" alt="Descrição da imagem"></p>
+
+
+
+<h4> Operadores de comparação:</h4>
+<p class = "cj"> - Os operadores de comparação são usados para comparar valores, o que vai retornar True ou False, dependendo da condição. A seguir, na Tabela 3 temos exemplos de alguns usados no Python.</p>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Operador</th>
+            <th>Conceito</th>
+            <th>Exemplo...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>>(Maior que)</td>
+            <td>	Verifica se um valor é maior que outro</td>
+            <td>x > 5</td>
+        </tr>
+        <tr>
+            <td><(Menor que)</td>
+            <td>Verifica se um valor é menor que outro</td>
+            <td>x < 5</td>
+        </tr>
+        <tr>
+            <td>== (Igual a)</td>
+            <td>Verifica se um valor é igual a outro</td>
+            <td>x == 2</td>
+        </tr>
+        <tr>
+            <td>!= (Diferente de)</td>
+            <td>Verifica se um valor é diferente de outro</td>
+            <td>x != 5</td>
+        </tr>
+        <tr>
+            <td>>= (Maior ou igual a)</td>
+            <td>	Verifica se um valor é maior ou igual a outro</td>
+            <td>x >= 8</td>
+        </tr>
+        <tr>
+            <td><=</td>
+            <td>Verifica se um valor é menor ou igual a outro</td>
+            <td>x <= 7</td>
+        </tr>
+       
+    </tbody>
+</table>
+
+<p class = "cj"> • Exemplo: </p>
+<p class= "cj"><img src="comp.png" alt="Descrição da imagem"></p>
+
+
+
+
+<h4> Operadores lógicos:</h4>
+<p class = "cj"> - Os operadores lógicos são usados para unir duas ou mais expressões condicionais. Isso é feito por meio de conectivos, como podemos ver na Tabela 4.</p>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Operador</th>
+            <th>Conceito</th>
+            <th>Exemplo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>and</td>
+            <td>	Retorna True se todas as condições forem verdadeiras, caso contrário retorna False</td>
+            <td>x > 1 and x < 5</td>
+        </tr>
+        <tr>
+            <td>or</td>
+            <td>Retorna True se uma das condições for verdadeiras, caso contrário retorna False</td>
+            <td>x > 1 or x < 5</td>
+        </tr>
+        <tr>
+            <td>not</td>
+            <td>Inverte o resultado: se o resultado da expressão for True, o operador retorna false</td>
+            <td>not(x > 1 and x < 5)</td>
+        </tr>
+       
+       
+    </tbody>
+</table>
+
+<p class = "cj"> • Exemplo: </p>
+<p class= "cj"><img src="log.png" alt="Descrição da imagem"></p>
+
+
+
+
+<h4> Operadores de identidade:</h4>
+<p class = "cj"> - Os operadores de identidade servem para a comparação de objetos. Nessa comparação é verificado se eles ocupam a mesma posição na memória, o que significará que se trata do mesmo objeto, como vemos isso na Tabela 5.</p>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Operador</th>
+            <th>Conceito</th>
+            <th>Exemplo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>is</td>
+            <td>Retorna True se as variáveis comparadas forem o mesmo objeto</td>
+            <td>nome is ‘Marcos’</td>
+        </tr>
+        <tr>
+            <td>is not</td>
+            <td>Retorna True se as variáveis comparadas não forem o mesmo objeto</td>
+            <td>x is not ‘Python’</td>
+        </tr>
+       
+       
+       
+    </tbody>
+</table>
+
+<p class = "cj"> • Exemplo: </p>
+<p class= "cj"><img src="id.png" alt="Descrição da imagem"></p>
+
+
+
+<h4> Operadores de associação:</h4>
+<p class = "cj"> - Os operadores de associação são utilizados para verificar se uma sequência contém um objeto. Na Tabela 6 temos os exemplos.</p>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Operador</th>
+            <th>Conceito</th>
+            <th>Exemplo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>in</td>
+            <td>Retorna True caso o valor seja encontrado na sequência</td>
+            <td> 2 in X</td>
+        </tr>
+        <tr>
+            <td>not in</td>
+            <td>Retorna True caso o valor não seja encontrado na sequência	</td>
+            <td>2 not in X</td>
+        </tr>
+       
+       
+       
+    </tbody>
+</table>
+
+<p class = "cj"> • Exemplo: </p>
+<p class= "cj"><img src="ass.png" alt="Descrição da imagem"></p>
+
+
+
+<h4> Estruturas de controle </h4>
+
+<p class= "cj"> • Estruturas de controle em Python são usadas para dirigir o fluxo de execução do programa, permitindo que ele tome decisões, repita ações ou alterne entre diferentes caminhos com base em condições específicas. As principais estruturas de controle são:</p>
+
+<h4> - Condicionais (if, elif, else):</h4>
+<p class= "cj"> Permitem a execução de blocos de código com base em condições. Se a condição do if for verdadeira, o bloco de código associado é executado; caso contrário, pode-se verificar outras condições com elif ou executar um bloco else caso nenhuma condição seja atendida.</p>
+<figure>
+<p class= "cj"><img src="cond.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Este programa verifica a idade e determina a categoria de ingresso de uma pessoa.</figcaption>
+</figure>
+
+<h4>- Laços de repetição (for, while):</h4>
+<p class= "cj"> Repetem um bloco de código várias vezes.</p>
+<p class= "cj"> • for: Itera sobre uma sequência (como uma lista ou string) e executa o bloco de código para cada elemento.</p>
+<figure>
+<p class= "cj"><img src="f.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Este programa imprime cada letra de uma palavra.</figcaption>
+</figure>
+
+<p class= "cj"> • while: Repete o bloco de código enquanto a condição especificada for verdadeira.</p>
+<figure>
+<p class= "cj"><img src="w.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Este programa continua pedindo para o usuário adivinhar um número até que ele acerte.</figcaption>
+</figure>
+
+<h4> - Comandos de controle de loop (break, continue, pass):</h4>
+<p class= "cj"> • break: Interrompe o loop imediatamente.</p>
+<figure>
+<p class= "cj"><img src="break.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Este programa imprime números de 1 a 10, mas para se encontrar o número 5.</figcaption>
+</figure>
+
+<p class= "cj"> • continue: Pula a iteração atual do loop e continua com a próxima.</p>
+<figure>
+<p class= "cj"><img src="continue.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Este programa imprime números de 1 a 5, mas pula o número 3.</figcaption>
+</figure>
+
+
+<p class= "cj"> • pass: Usado como um placeholder quando um bloco de código é necessário sintaticamente, mas não precisa executar nada.</p>
+<figure>
+<p class= "cj"><img src="pass.png" alt="Descrição da imagem"></p>
+<figcaption class = "cj">Este exemplo usa pass para criar uma função que será implementada posteriormente.</figcaption>
+</figure>
+
+
+<p class= "cj"> • Essas estruturas de controle são essenciais para criar lógica em programas Python, permitindo tomar decisões, repetir tarefas e controlar o fluxo de execução de maneira eficiente.</p>
+
+
+
+<h3><span class = "highlight"> Instalação e configuração, história da linguagem...</span></h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FU_FQ1fo4no?si=_8X-rHdQ2tutlL2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </th>
+
+
+
+</body>
+</html>
+
